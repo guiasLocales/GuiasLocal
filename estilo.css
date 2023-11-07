@@ -1,0 +1,285 @@
+/* ----------------------------------------- GENERAL ------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Tipo de fuente */
+}
+
+/* ----------------------------------------- HEADER ------------------------------------------- */
+.contenedor{
+    padding-left:10px; /* Espacio alrededor del contenido del contenedor */
+    padding-right: 10px; /* Espacio alrededor del contenido del contenedor */
+}
+.contenedor-header {
+    position: relative; /* Posición relativa para que el encabezado se pueda superponer a la imagen de fondo */
+}
+
+header {
+    display: flex; /* Para que los elementos del encabezado se muestren en línea */
+    justify-content: space-between; /* Para alinear elementos en el centro */
+    align-items: center; /* Para alinear elementos en el centro */
+    position: fixed; /* Fija el encabezado en la parte superior de la página */
+    padding: 10px; /* Espacio alrededor del encabezado */
+    width: 100%; /* Ajusta el ancho del encabezado al 100% */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para el encabezado */
+    z-index: 1; /* Para que el encabezado esté por encima de la imagen de fondo */
+}
+.logo {
+    margin-left: 4%; /*Margen izquierdo para el logo*/
+}
+
+nav {
+    width: 45%;
+    margin-right:5%; /* Margen derecho para el menú */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
+    text-align: center; /* Alinea el texto en el centro de cada elemento */
+}
+
+nav a {
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 550;
+    transition: inherit;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: rgb(236, 232, 223);
+}
+/* ----------------------- Estilo base para la lista desplegable (inicialmente oculta) ------------------------ */
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color:  #0367A6 ; /* Color de fondo de la sublista */
+    z-index: -1; /* Para que esté por encima de otros elementos */
+    margin: 0;
+    padding: 10px 20px;
+}
+
+/* Estilo para los elementos de la sublista */
+nav ul ul li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+/* Estilo para los enlaces de la sublista */
+nav ul ul li a {
+    font-weight: 550;
+    color:  #FFFFFF; /* Cambia el color de texto de la sublista */
+}
+
+/* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
+nav ul li:hover ul {
+    display: block;
+}
+
+/* ----------------------------------------- fin lista desplegable ------------------------------------------- */
+
+ul {
+    list-style: none; /* Quita las viñetas de la lista */
+    display: flex; /* Para que los elementos de la lista se muestren en línea */
+    justify-content: center; /* Para alinear elementos en el centro */
+    background-color: rgb(235, 96, 99); /* Color de fondo del menú */
+    border-bottom-left-radius: 15px; /* Borde redondeado izquierdo */
+    border-top-left-radius: 15px; /* Borde redondeado derecho */
+    border-bottom-right-radius: 15px; /* Borde redondeado derecho */    
+    border-top-right-radius: 15px; /* Borde redondeado derecho */
+    
+}
+
+li {
+    margin: 0 5px; /* Margen horizontal entre elementos del menú */
+    padding: 10px 20px; /* Espacio alrededor del texto del enlace */
+}
+li a{
+    display: block; /* Convierte el enlace en un elemento de bloque */
+    color: #FFFFFF; /* Color del texto */
+    font-size: 15px; /* Tamaño de la fuente */
+    text-decoration: none; /* Quita la decoración de texto (subrayado) */
+    transition: inherit; /* Agrega una transición para suavizar el cambio de color */
+    white-space: nowrap; /* Evita que el texto se desborde */
+}
+li a:hover {
+    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
+}
+
+/* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
+
+.imagen-fondo {
+    background-image: url('./img/15caa100-2ca3-45bb-966f-9a866e450934.gif');  /* Imagen de fondo header */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    height: 100vh;  /* Ajusta la altura del contenedor al 100% del alto de la pantalla */
+    display: flex;  /* Ajusta el contenido del contenedor al centro */
+    align-items: center; /* Ajusta el contenido del contenedor al centro */   
+    justify-content: center; /* Ajusta el contenido del contenedor al centro */
+    text-align: center; /* Ajusta el contenido del contenedor al centro */
+}
+
+.imagen-fondo h1 {
+    margin-top: 8%;
+    color: #0367A6 !important; /* Cambia el color del texto */
+    font-size: 7.5rem; /* Ajusta el tamaño de fuente */ 
+}
+
+/* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
+
+/* ----------------------------------------- HEADER ------------------------------------------- */
+
+/* ----------------------------------------- FRASE ------------------------------------------- */
+.contenedor-frase {
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    text-align: center; /* Ajusta el contenido del contenedor al centro */
+    padding: 70px;  /* Ajusta el espacio alrededor del contenido del contenedor */
+    background: linear-gradient(to bottom, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+}
+
+.contenedor-frase h2 {
+    color: #939393; /* Color del texto */
+    font-size: 3.2rem; /* Ajusta el tamaño de fuente */
+    font-weight: 500; /* Ajusta el grosor de la fuente */
+}
+
+.contenedor-frase .color-especial {
+    color: #0367A6 !important; /* Cambia el color del texto */
+}
+/* ----------------------------------------- FRASE ------------------------------------------- */
+
+/* ----------------------------------------- FILOSOFIA ------------------------------------------- */
+.contenedor-filosofia {
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    text-align: center; /* Ajusta el contenido del contenedor al centro */
+    padding: 70px;  /* Ajusta el espacio alrededor del contenido del contenedor */
+}
+
+.contenedor-filosofia h2 {
+    color: #FF0000; /* Color del texto */
+    font-size: 3.2rem; /* Ajusta el tamaño de fuente */
+    font-weight:bold; /* Ajusta el grosor de la fuente */
+}
+.contenedor-filosofia p {
+    color: #5c5b5b; /* Color del texto para las frases */
+    font-size: 1rem; /* Tamaño de fuente para las frases */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.contenedor-filosofia strong {
+    font-weight: bold; /* Aplicar negrita a "en equipo" */
+}
+  
+/* ----------------------------------------- FILOSOFIA ------------------------------------------- */
+/* ----------------------------------------- TARJETAS ------------------------------------------- */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    margin: 10px;
+}
+
+.icono {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.icono-rojo {
+    color: #FF0000; /* Color rojo para los íconos */
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: #4d4545; /* Color del texto para las frases */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #5c5b5b; /* Color del texto para las frases */
+}
+
+/* ----------------------------------------- TARJETAS ------------------------------------------- */
+/* ----------------------------------------- BOTÓN ------------------------------------------- */
+.contenedor-boton {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.boton-conocer {
+    background-color: #d6dcdc; /* Color gris */
+    color: #1b1a1a;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, cursor 0.3s;
+}
+
+.boton-conocer:hover {
+    background-color: #7a64ff; /* Color violeta */
+    cursor: pointer;
+}
+/* ----------------------------------------- BOTÓN ------------------------------------------- */
+/* ----------------------------------------- NUESTROS SERVICIOS ------------------------------------------- */
+.contenedor-servicios {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-servicios {
+    text-align: center;
+    font-size: 3rem; /* Tamaño de fuente más grande */
+}
+
+.gris {
+    color: #939393; /* Color gris para "nuestros" */
+}
+
+.titulo-servicios .azul {
+    color: #0367A6; /* Color azul para "servicios" */
+}
+
+/* Estilo para los otros títulos */
+.tarjeta-s h2 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.tarjeta-s {
+    width: 75%;
+    padding: 20px;
+    margin: 10px;
+    background: #808080; /* Color gris para las tarjetas grises */
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.tarjeta.hoja-azul {
+    background: #0367A6; /* Color azul para las tarjetas azules */
+}
+
