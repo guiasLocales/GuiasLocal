@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./nosotros.css">
     <title>Guias Locales</title>
 </head>
 
@@ -13,104 +14,228 @@
     <div class="contenedor">
         <div class="contenedor-header">
             <header>
-                <div class="logo">
+                <div class="logo-header">
                     <img src="./img/LOGOGO (2).png" width=400px; alt="Logo">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#trabajos">Trabajos</a></li>
-                        <li>
-                            <a href="#soluciones">Soluciones</a>
+                <nav class="nav-header">
+                    <ul class="ul-header">
+                        <li class="li-header"><a href="#nosotros" class="a-header">Nosotros</a></li>
+                        <li class="li-header"><a href="#trabajos" class="a-header">Trabajos</a></li>
+                        <li class="li-header">
+                            <a href="#soluciones" class="a-header">Soluciones</a>
                             <!-- Sublista bajo "Soluciones" -->
-                            <ul>
-                                <li><a href="#seo">SEO</a></li>
-                                <li><a href="#sem">SEM</a></li>
-                                <li><a href="#cro">CRO</a></li>
+                            <ul class="ul-sublista">
+                                <li class="li-sublista"><a href="#seo" class="a-sublista">SEO</a></li>
+                                <li class="li-sublista"><a href="#sem" class="a-sublista">SEM</a></li>
+                                <li class="li-sublista"><a href="#cro" class="a-sublista">CRO</a></li>
                             </ul>
                         </li>
-                        <li><a href="#blog">BLOG</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li class="li-header"><a href="#blog" class="a-header">BLOG</a></li>
+                        <li class="li-header"><a href="#contacto" class="a-header">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
+        </div>
+        <div class="contenedor-recarga">
             <div class="imagen-fondo">
                 <h1>Marketing que genera negocio</h1>
-                <!-- <img src="./img/imagenfondoHeader.png" alt="No se encontro la imagen" srcset=""> -->
+            </div>
+            <div class="contenedor-frase">
+                <h2>"No se trata solo de las <span class="color-especial">ideas</span>.</h2>
+                <h2>Sino de convertirlas en realidad <span class="color-especial">realidad</span>."</h2>
+            </div>
+            <div class="contenedor-filosofia">
+                <h2>Filosofía</h2>
+                <p>Trabajamos a la par con nuestros clientes para lograr lo mejor en cada proyecto que sale a la luz.
+                </p>
+                <p>Nuestro equipo cuenta con destacados profesionales de diferentes rubros que se fusionan para lograr
+                    resultados de calidad en los tiempos requeridos.</p>
+                <br>
+                <p><strong>Creemos y estamos</strong> convencidos que la única forma de crecer es <strong>en
+                        equipo.</strong></p>
+            </div>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <i class="fas fa-smile fa-3x icono-rojo"></i>
+                    <h3>Amamos lo que hacemos</h3>
+                    <p>Ponemos mucha pasión y cabeza a cada proyecto que llega o sale. Diseñamos planes a medida de cada
+                        cliente y asesoramos a través de la experiencia.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="far fa-eye fa-3x icono-rojo"></i>
+                    <h3>Soluciones 360°</h3>
+                    <p>Trabajamos desde una perspectiva integral abarcando todas las áreas: creatividad - diseño -
+                        producción - logística - implementación - coordinación - seguimiento y más.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fas fa-shield-alt fa-3x icono-rojo"></i>
+                    <h3>Experiencia y Trayectoria</h3>
+                    <p>Construimos relaciones y vínculos que transcienden cada proyecto. Contamos con un equipo joven
+                        que
+                        abarca nuevas tendencias y profesionales con más de 25 años de trayectoria</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="far fa-thumbs-up fa-3x icono-rojo"></i>
+                    <h3>​Google Partner</h3>
+                    <p>​Google nos ha reconocido como una agencia de confianza que genera valor al anunciante. Ser
+                        profesionales en nuestro trabajo tiene sus recompensas.</p>
+                </div>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton-conocer">Conocer más</button>
+            </div>
+            <div class="contenedor-servicios">
+                <div class="titulo-servicios">
+                    <h2 class="titulo-servicios gris">Nuestros <span class="azul">Servicios</span></h2>
+                </div>
+                <div class="tarjetas-servicios ">
+                    <div class="tarjeta-s gris sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>CATÁLOGO DE PRODUCTOS</h2>
+                            <p>​Armamos el catálogo de productos que mejor se adapte a tu perfil de negocio, para
+                                posicionar
+                                tu empresa orgánicamente..</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                    <div class="tarjeta-s azul sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>PUBLICACIONES DIARIAS</h2>
+                            <p>Replicamos en tu perfil de negocio tus posteos semanales de las redes sociales más
+                                utilizadas.</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                    <div class="tarjeta-s gris sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>CONTACTO</h2>
+                            <p>​Agregamos un link de WSP en cada uno de los posteos para mejorar el contacto con tus
+                                clientes y conectar cada producto con él.</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                    <div class="tarjeta-s azul sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>UBICACIÓN OPTIMIZADA</h2>
+                            <p>Mejoramos visualmente la ubicación con fotos de portada atractiva y manteniéndolas
+                                completamente actualizadas.</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                    <div class="tarjeta-s gris sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>GESTIÓN DE RESEÑAS</h2>
+                            <p>Gestionamos tus reseñas y ayudamos a que obtengas más mediante acciones de marketing
+                                adecuadas a tu negocio.</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                    <div class="tarjeta-s azul sticky">
+                        <div class="titulo-tarjetas">
+                            <h2>​ESTADÍSTICAS MENSUALES</h2>
+                            <p>​Resumimos las estadísticas de todas tus ubicaciones, una forma sencilla de ver y así
+                                tomar mejores decisiones en el futuro.</p>
+                        </div>
+                        <img src="./img/card-fox.png" alt="No se encontro la imagen">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-portfolio">
+                <div class="titulo-portfolio">
+                    <h2 class="titulo-portfolio azul">Nuestro <span class="gris">Portfolio</span></h2>
+                </div>
+                <div class="tarjetas-portfolio">
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 1">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 2">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 3">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 4">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 1">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 2">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 3">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 4">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 1">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 2">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 3">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="imagen">
+                            <img src="./img/FOTOS/DSC_0467.jpg" alt="Descripción de la imagen 4">
+                            <div class="descripcion">Describe tu imagen aquí</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="contenedor-frase">
-            <h2>"No se trata solo de las <span class="color-especial">ideas</span>.</h2>
-            <h2>Sino de convertirlas en realidad <span class="color-especial">realidad</span>."</h2>
+        <div class="contenedor-footer">
+            <footer>
+                <hr>
+                <div style="text-align: center;">
+                    <img src="./img/iconoGuiasLocales.png" alt="Logo de Guias Locales">
+                    <p>© 2035 BY GUIAS LOCALES</p>
+                    <ul class="redes-sociales">
+                        <li><a href="https://www.facebook.com/Guiaslocalescba/" target="_blank"><i
+                                    class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/guiaslocalesar/?hl=en" target="_blank"><i
+                                    class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-        <div class="contenedor-filosofia">
-            <h2>Filosofía</h2>
-            <p>Trabajamos a la par con nuestros clientes para lograr lo mejor en cada proyecto que sale a la luz.</p>
-            <p>Nuestro equipo cuenta con destacados profesionales de diferentes rubros que se fusionan para lograr resultados de calidad en los tiempos requeridos.</p>
-            <br>
-            <p><strong>Creemos y estamos</strong> convencidos que la única forma de crecer es <strong>en equipo.</strong></p>
-        </div>
-        <div class="contenedor-tarjetas">
-            <div class="tarjeta">
-                <i class="fas fa-smile fa-3x icono-rojo"></i>
-                <h3>Amamos lo que hacemos</h3>
-                <p>Ponemos mucha pasión y cabeza a cada proyecto que llega o sale. Diseñamos planes a medida de cada cliente y asesoramos a través de la experiencia.</p>
-            </div>
-            <div class="tarjeta">
-                <i class="far fa-eye fa-3x icono-rojo"></i>
-                <h3>Soluciones 360°</h3>
-                <p>Trabajamos desde una perspectiva integral abarcando todas las áreas: creatividad - diseño - producción - logística - implementación - coordinación - seguimiento y más.</p>
-            </div>
-            <div class="tarjeta">
-                <i class="fas fa-shield-alt fa-3x icono-rojo"></i>
-                <h3>Experiencia y Trayectoria</h3>
-                <p>Construimos relaciones y vínculos que transcienden cada proyecto. Contamos con un equipo joven que abarca nuevas tendencias y profesionales con más de 25 años de trayectoria</p>
-            </div>
-            <div class="tarjeta">
-                <i class="far fa-thumbs-up fa-3x icono-rojo"></i>
-                <h3>​Google Partner</h3>
-                <p>​Google nos ha reconocido como una agencia de confianza que genera valor al anunciante. Ser profesionales en nuestro trabajo tiene sus recompensas.</p>
-            </div>
-        </div>
-        <div class="contenedor-boton">
-            <button class="boton-conocer">Conocer más</button>
-        </div>
-        <div class="contenedor-servicios">
-            <h2 class="titulo-servicios gris">Nuestros <span class="azul">Servicios</span></h2>
-            <div class="tarjeta-s gris">
-                <h2>Servicio 1</h2>
-                <p>Descripción del Servicio 1.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-            <div class="tarjeta-s azul">
-                <h2>Servicio 2</h2>
-                <p>Descripción del Servicio 2.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-            <div class="tarjeta-s gris">
-                <h2>Servicio 3</h2>
-                <p>Descripción del Servicio 3.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-            <div class="tarjeta-s azul">
-                <h2>Servicio 4</h2>
-                <p>Descripción del Servicio 4.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-            <div class="tarjeta-s gris">
-                <h2>Servicio 5</h2>
-                <p>Descripción del Servicio 5.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-            <div class="tarjeta-s azul">
-                <h2>Servicio 6</h2>
-                <p>Descripción del Servicio 6.</p>
-                <img src="./img/card-fox.png" alt="No se encontro la imagen">
-            </div>
-        </div>
-        
-        
-               
+
     </div>
     <script src="./javascript.js"></script>
 </body>

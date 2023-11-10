@@ -1,0 +1,106 @@
+/* ----------------------------------------- GENERAL ------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Tipo de fuente */
+}
+/* ----------------------------------------- GENERAL ------------------------------------------- */
+
+/* ----------------------------------------- TITULO ------------------------------------------- */
+.contenedor_nosotros {
+    width: 100%;
+}
+
+.contenedor-titulo-nosotros {
+    text-align: center;
+}
+
+.titulo-n h1{
+    font-size: 4.5rem; /* Tamaño grande para el título */
+    font-weight: normal; /* Puedes ajustar el peso de la fuente según tus preferencias */
+}
+
+.titulo-n{
+    margin-bottom: 20px; /* Margen inferior para separar el título del subtítulo */
+}
+
+.bold {
+    font-weight: bold; /* Hace que el texto sea más grueso (negrita) */
+}
+
+.fino {
+    font-weight:500; /* Hace que "Hola! Somos" tenga letras más finas */
+}
+
+.subtitulo-n h4 {
+    font-weight:500;
+    font-size: 1.5rem; /* Tamaño grande para el subtítulo */
+    margin-top: 5px; /* Margen superior para separar el subtítulo del título */
+}
+
+/* ----------------------------------------- TITULO ------------------------------------------- */
+/* ----------------------------------------- MISION - VISION ------------------------------------------- */
+.contenedor-misionvision {
+    width: 100%;
+    margin-top: 100px;
+}
+.mision, .vision{
+  
+    float: left;
+    padding: 50px;
+    text-align: center;
+}
+.titulo-mision h2, .titulo-vision h2 {
+    color: #0367a6;
+    font-size: 5.5rem;
+    font-weight: 500;
+    text-align: left; /* Alineo el título al centro */
+}
+.texto-mision p, .texto-vision p {
+    font-size: 1rem;
+    margin: 0; /* Elimino el margen para evitar espacio adicional */
+    text-align: justify; /* Justifico el texto */
+}
+/* ----------------------------------------- MISION - VISION ------------------------------------------- */
+
+/* ----------------------------------------- MARKETING 360° ------------------------------------------- */
+.contenedor-somos {
+    background-color: #f2ede4;
+    text-align: center;
+    padding: 40px; /* Espaciado interior para centrar el contenido */
+}
+
+.titulo-somos {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.subtitulo-somos {
+    margin-bottom: 20px;
+}
+
+.tarjetas-somos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjetas-s {
+    width: calc(33.33% - 40px); /* Ancho de cada tarjeta */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+/* ----------------------------------------- MARKETING 360° ------------------------------------------- */

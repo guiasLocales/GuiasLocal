@@ -11,6 +11,7 @@
     padding-left:10px; /* Espacio alrededor del contenido del contenedor */
     padding-right: 10px; /* Espacio alrededor del contenido del contenedor */
 }
+
 .contenedor-header {
     position: relative; /* Posición relativa para que el encabezado se pueda superponer a la imagen de fondo */
 }
@@ -25,6 +26,7 @@ header {
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para el encabezado */
     z-index: 1; /* Para que el encabezado esté por encima de la imagen de fondo */
 }
+
 .logo {
     margin-left: 4%; /*Margen izquierdo para el logo*/
 }
@@ -33,6 +35,7 @@ nav {
     width: 45%;
     margin-right:5%; /* Margen derecho para el menú */
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -60,6 +63,7 @@ nav a {
 nav a:hover {
     color: rgb(236, 232, 223);
 }
+
 /* ----------------------- Estilo base para la lista desplegable (inicialmente oculta) ------------------------ */
 nav ul ul {
     display: none;
@@ -96,9 +100,9 @@ ul {
     background-color: rgb(235, 96, 99); /* Color de fondo del menú */
     border-bottom-left-radius: 15px; /* Borde redondeado izquierdo */
     border-top-left-radius: 15px; /* Borde redondeado derecho */
-    border-bottom-right-radius: 15px; /* Borde redondeado derecho */    
+    border-bottom-right-radius: 15px; /* Borde redondeado derecho */
     border-top-right-radius: 15px; /* Borde redondeado derecho */
-    
+
 }
 
 li {
@@ -113,6 +117,7 @@ li a{
     transition: inherit; /* Agrega una transición para suavizar el cambio de color */
     white-space: nowrap; /* Evita que el texto se desborde */
 }
+
 li a:hover {
     color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
 }
@@ -124,7 +129,7 @@ li a:hover {
     background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
     height: 100vh;  /* Ajusta la altura del contenedor al 100% del alto de la pantalla */
     display: flex;  /* Ajusta el contenido del contenedor al centro */
-    align-items: center; /* Ajusta el contenido del contenedor al centro */   
+    align-items: center; /* Ajusta el contenido del contenedor al centro */
     justify-content: center; /* Ajusta el contenido del contenedor al centro */
     text-align: center; /* Ajusta el contenido del contenedor al centro */
 }
@@ -132,7 +137,7 @@ li a:hover {
 .imagen-fondo h1 {
     margin-top: 8%;
     color: #0367A6 !important; /* Cambia el color del texto */
-    font-size: 7.5rem; /* Ajusta el tamaño de fuente */ 
+    font-size: 7.5rem; /* Ajusta el tamaño de fuente */
 }
 
 /* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
@@ -170,6 +175,7 @@ li a:hover {
     font-size: 3.2rem; /* Ajusta el tamaño de fuente */
     font-weight:bold; /* Ajusta el grosor de la fuente */
 }
+
 .contenedor-filosofia p {
     color: #5c5b5b; /* Color del texto para las frases */
     font-size: 1rem; /* Tamaño de fuente para las frases */
@@ -179,7 +185,7 @@ li a:hover {
 .contenedor-filosofia strong {
     font-weight: bold; /* Aplicar negrita a "en equipo" */
 }
-  
+
 /* ----------------------------------------- FILOSOFIA ------------------------------------------- */
 /* ----------------------------------------- TARJETAS ------------------------------------------- */
 .contenedor-tarjetas {
@@ -238,6 +244,7 @@ p {
     background-color: #7a64ff; /* Color violeta */
     cursor: pointer;
 }
+
 /* ----------------------------------------- BOTÓN ------------------------------------------- */
 /* ----------------------------------------- NUESTROS SERVICIOS ------------------------------------------- */
 .contenedor-servicios {
@@ -250,8 +257,10 @@ p {
 }
 
 .titulo-servicios {
-    text-align: center;
+    text-align: center; /* Alinea el texto al centro */
     font-size: 3rem; /* Tamaño de fuente más grande */
+    padding: 20px;
+    
 }
 
 .gris {
@@ -269,17 +278,162 @@ p {
 }
 
 .tarjeta-s {
-    width: 75%;
+    display: flex;
+    width: 90%;
     padding: 20px;
     margin: 10px;
-    background: #808080; /* Color gris para las tarjetas grises */
-    color: #fff;
+    /* Color gris para las tarjetas grises */
+    color: #000000;
     border-radius: 15px;
-    text-align: center;
     transition: background-color 0.3s;
 }
 
-.tarjeta.hoja-azul {
-    background: #0367A6; /* Color azul para las tarjetas azules */
+.tarjeta-s.gris {
+    background: #fff; /* Color gris para las tarjetas grises */
+    color: #3C3C3C; /* Color de texto para las tarjetas grises */
 }
 
+.tarjeta-s.azul {
+    background: #0367A6; /* Color azul para las tarjetas azules */
+    color: #fff; /* Color de texto para las tarjetas azules */
+}
+
+.titulo-tarjetas {
+    width: 48%;
+}
+
+/* Configura el título y el párrafo para ocupar el 40% del ancho cada uno */
+.tarjeta-s h2 {
+    text-align: left;
+    width: 70%;
+    font-size: 50px;
+    padding: 50px;
+
+}
+
+.tarjeta-s p {
+    width: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #5c5b5b; /* Color del texto para las frases */
+    margin-left: 50px;
+    
+
+}
+
+/* Configura la imagen para ocupar el 60% del ancho disponible */
+.tarjeta-s img {
+    width: 50%;
+}
+
+.tarjetas-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-image: url('./img/img-tarjetas.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.tarjeta.hoja-azul {
+    background: #0367A6;
+    /* Color azul para las tarjetas azules */
+}
+
+.tarjeta-s .azul {
+    background: #0367A6;
+    /* Color azul para las tarjetas azules */
+}
+
+.sticky {
+    position: sticky;
+    /* Tarjeta 1 se queda fija */
+    top: 0;
+    /* La posición en la que se quedará fija */
+}
+
+/* Agrega un margen superior para separar las tarjetas */
+.tarjeta-s:not(.sticky) {
+    margin-top: 20px;
+    /* Ajusta el valor según tu preferencia */
+}
+
+/* ----------------------------------------- NUESTROS SERVICIOS ------------------------------------------- */
+/* ----------------------------------------- NUESTROS PORTFOLIO ------------------------------------------- */
+.contenedor-portfolio {
+    width: 100%;
+}
+
+.titulo-portfolio {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3rem; /* Tamaño de fuente más grande */
+    padding: 20px;
+    
+}
+
+.titulo-portfolio  .azul {
+    color: #0367A6;
+    /* Color gris para "nuestros" */
+}
+
+.titulo-portfolio .gris {
+    color: #939393;
+    /* Color azul para "servicios" */
+}
+
+/* Estilo base para las tarjetas */
+.tarjetas-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 23%;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 1s, background-color 1s;
+    overflow: hidden; 
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.descripcion {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 0, 0, 0.7); /* Color rojo con opacidad */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+/* Mostrar la descripción en el paso del cursor */
+.tarjeta:hover .descripcion {
+    display: block;
+}
+
+/* Hacer que la tarjeta sea opaca en el paso del cursor */
+.tarjeta:hover {
+    opacity: 0.7;
+}
+
+/* ----------------------------------------- NUESTROS PORTFOLIO ------------------------------------------- */
