@@ -498,14 +498,13 @@ p {
 .contenedor-creadores {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    background: linear-gradient(to top, #eee8dd, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .tarjeta-creador {
     width: 400px;
     text-align: center;
     margin: 20px;
-    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .imagen-creador img {
@@ -539,6 +538,7 @@ p {
 /* ----------------------------------------- FOOTER ------------------------------------------- */
 .contenedor-footer {
     padding: 20px;
+    background-image: url('./img/15caa100-2ca3-45bb-966f-9a866e450934.gif');
 }
 
 .footer-contenido {
