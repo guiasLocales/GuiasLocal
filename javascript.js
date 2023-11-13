@@ -17,45 +17,87 @@ fourCards.addEventListener('click', e => {
     e.preventDefault();
 
     displayInfo.innerHTML = `
-    // <div class="contenedor_nosotros">
-    //     <div class="contenedor-titulo-nosotros">
-    //         <div class="titulo-n">
-    //             <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
-    //         </div>
-    //         <div class="subtitulo-nosotros">
-    //             <div class="subtitulo-n">
-    //                 <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,
-    //                     sitios web estratégicos y always-on dedicados.</h4>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <div class="contenedor-mivi">
-    //         <div class="mision">
-    //             <div class="titulo-mision">
-    //                 <h2>Misión</h2>
-    //             </div>
-    //             <div class="texto-mision">
-    //                 <p>
-    //                     Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
-    //                     El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
-    //                     Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
-    //                 </p>
-    //             </div>
-    //         </div>
-    //         <div class="vision">
-    //             <div class="titulo-vision">
-    //                 <h2>Visión</h2>
-    //             </div>
-    //             <div class="texto-vision">
-    //                 <p>
-    //                     Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
-    //                     Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
-    //                     VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
-    //                 </p>
-    //             <div>
-    //         </div>
-    //     </div>
-    // </div>
+    <div class="contenedor_nosotros">
+    <div class="contenedor-titulo-nosotros">
+        <div class="titulo-n">
+            <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
+        </div>
+        <div class="subtitulo-n">
+            <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
+            <h4> sitios web estratégicos y always-on dedicados.</h4>
+        </div>
+    </div>
+    <div class="contenedor-misionvision">
+        <div class="mision">
+                <h2>Misión</h2>
+                <p>
+                    Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
+                    El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
+                    Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
+                </p>
+        </div>
+        <div class="vision">
+                <h2>Visión</h2>
+                <p>
+                    Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
+                    Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
+                    VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
+                </p>
+        </div>
+    </div>
+    <div class="contenedor-somos">
+        <div class="titulo-somos">
+            <h1><span class="fino">Somos una Agencia de </span><span class="bold">Marketing 360°</span></h1>
+        </div>
+        <div class="subtitulo-somos">
+            <p>Analizamos los datos constantemente para tomar decisiones en tiempo real y mejorar el retorno de tu inversión. Creemos que cada cliente tiene unas necesidades y unos ritmos, nuestro trabajo es generar el máximo retorno dentro de sus tiempos y expectativas.</p>
+        </div>
+        <div class="tarjetas-somos">
+            <div class="tarjetas-s">
+                <h3>Nos enfocamos en datos</h3>
+                <p>Aceleramos el crecimiento de tu marca gracias al análisis de datos. Lanzamos hipótesis, realizamos test A/B y tomamos decisiones en base a la analítica y los resultados.</p>
+            </div>
+            <div class="tarjetas-s">
+                <h3>Somos ágiles</h3>
+                <p>Tomamos decisiones eficaces en base al análisis de resultados y en torno a una estrategia. Optimizamos el proceso constantemente para mejorar los resultados.</p>
+            </div>
+            <div class="tarjetas-s">
+                <h3>Experiencia en tu sector</h3>
+                <p>Desde el sector industrial al de las SaaS, pasando por alimentación, turismo o marketplaces de gran consumo. Es probable que tengamos experiencia generando negocio en tu sector.</p>
+            </div>
+            <div class="tarjetas-s">
+                <h3>Las personas en Guías Locales</h3>
+                <p>Expertos en Marketing Digital, no nos conformamos solo con buenos resultados: buscamos la excelencia para lograr los objetivos de nuestros clientes.</p>
+            </div>
+            <div class="tarjetas-s">
+                <h3>Trabajado en crecimiento</h3>
+                <p>Hemos mejorado el posicionamiento y aumentado los beneficios de grandes marcas como así también hemos hecho crecer a pequeñas y medianas empresas.</p>
+            </div>
+            <div class="tarjetas-s">
+                <h3>Generar Negocios</h3>
+                <p>Queremos aumentar tus conversiones, y hacer crecer tu negocio. Para ello, trabajamos con rigor científico. Analizamos los datos constantemente para tomar decisiones en tiempo real y mejorar el retorno de tu inversión.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-resumen">
+        <div class="tarjeta-resumen">
+            <div class="texto-principal">+ DE 8M</div>
+            <div class="texto-secundario"><span class="flecha">&#x2191;</span> COMERCIOS </div>
+        </div>
+        <div class="tarjeta-resumen">
+            <div class="texto-principal">+ DE 60M</div>
+            <div class="texto-secundario"><span class="flecha">&#x2191;</span> FOTOGRAFÍAS</div>
+        </div>
+        <div class="tarjeta-resumen">
+            <div class="texto-principal">+ DE 2M</div>
+            <div class="texto-secundario"><span class="flecha">&#x2191;</span> VIDEOS 360° Google View</div>
+        </div>
+        <div class="tarjeta-resumen">
+            <div class="texto-principal">7 AÑOS</div>
+            <div class="texto-secundario"><span class="flecha">&#x2191;</span> DE EXPERIENCIA</div>
+        </div>
+    </div>
+</div>
     `;
     volver();//funcion para el boton volver.
 });
@@ -82,45 +124,87 @@ function cargarContenido(targetId) {
     // Ejemplo de contenido para la sección "Nosotros"
     if (targetId === 'nosotros') {
         holaInfo.innerHTML =`
-        // <div class="contenedor_nosotros">
-        //     <div class="contenedor-titulo-nosotros">
-        //         <div class="titulo-n">
-        //             <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
-        //         </div>
-        //         <div class="subtitulo-nosotros">
-        //             <div class="subtitulo-n">
-        //                 <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,
-        //                     sitios web estratégicos y always-on dedicados.</h4>
-        //             </div>
-        //         </div>
-        //     </div>
-        //     <div class="contenedor-mivi">
-        //         <div class="mision">
-        //             <div class="titulo-mision">
-        //                 <h2>Misión</h2>
-        //             </div>
-        //             <div class="texto-mision">
-        //                 <p>
-        //                     Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
-        //                     El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
-        //                     Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
-        //                 </p>
-        //             </div>
-        //         </div>
-        //         <div class="vision">
-        //             <div class="titulo-vision">
-        //                 <h2>Visión</h2>
-        //             </div>
-        //             <div class="texto-vision">
-        //                 <p>
-        //                     Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
-        //                     Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
-        //                     VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
-        //                 </p>
-        //             <div>
-        //         </div>
-        //     </div>
-        // </div>
+        <div class="contenedor_nosotros">
+        <div class="contenedor-titulo-nosotros">
+            <div class="titulo-n">
+                <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
+            </div>
+            <div class="subtitulo-n">
+                <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
+                <h4> sitios web estratégicos y always-on dedicados.</h4>
+            </div>
+        </div>
+        <div class="contenedor-misionvision">
+            <div class="mision">
+                    <h2>Misión</h2>
+                    <p>
+                        Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
+                        El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
+                        Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
+                    </p>
+            </div>
+            <div class="vision">
+                    <h2>Visión</h2>
+                    <p>
+                        Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
+                        Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
+                        VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
+                    </p>
+            </div>
+        </div>
+        <div class="contenedor-somos">
+            <div class="titulo-somos">
+                <h1><span class="fino">Somos una Agencia de </span><span class="bold">Marketing 360°</span></h1>
+            </div>
+            <div class="subtitulo-somos">
+                <p>Analizamos los datos constantemente para tomar decisiones en tiempo real y mejorar el retorno de tu inversión. Creemos que cada cliente tiene unas necesidades y unos ritmos, nuestro trabajo es generar el máximo retorno dentro de sus tiempos y expectativas.</p>
+            </div>
+            <div class="tarjetas-somos">
+                <div class="tarjetas-s">
+                    <h3>Nos enfocamos en datos</h3>
+                    <p>Aceleramos el crecimiento de tu marca gracias al análisis de datos. Lanzamos hipótesis, realizamos test A/B y tomamos decisiones en base a la analítica y los resultados.</p>
+                </div>
+                <div class="tarjetas-s">
+                    <h3>Somos ágiles</h3>
+                    <p>Tomamos decisiones eficaces en base al análisis de resultados y en torno a una estrategia. Optimizamos el proceso constantemente para mejorar los resultados.</p>
+                </div>
+                <div class="tarjetas-s">
+                    <h3>Experiencia en tu sector</h3>
+                    <p>Desde el sector industrial al de las SaaS, pasando por alimentación, turismo o marketplaces de gran consumo. Es probable que tengamos experiencia generando negocio en tu sector.</p>
+                </div>
+                <div class="tarjetas-s">
+                    <h3>Las personas en Guías Locales</h3>
+                    <p>Expertos en Marketing Digital, no nos conformamos solo con buenos resultados: buscamos la excelencia para lograr los objetivos de nuestros clientes.</p>
+                </div>
+                <div class="tarjetas-s">
+                    <h3>Trabajado en crecimiento</h3>
+                    <p>Hemos mejorado el posicionamiento y aumentado los beneficios de grandes marcas como así también hemos hecho crecer a pequeñas y medianas empresas.</p>
+                </div>
+                <div class="tarjetas-s">
+                    <h3>Generar Negocios</h3>
+                    <p>Queremos aumentar tus conversiones, y hacer crecer tu negocio. Para ello, trabajamos con rigor científico. Analizamos los datos constantemente para tomar decisiones en tiempo real y mejorar el retorno de tu inversión.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-resumen">
+            <div class="tarjeta-resumen">
+                <div class="texto-principal">+ DE 8M</div>
+                <div class="texto-secundario"><span class="flecha">&#x2191;</span> COMERCIOS </div>
+            </div>
+            <div class="tarjeta-resumen">
+                <div class="texto-principal">+ DE 60M</div>
+                <div class="texto-secundario"><span class="flecha">&#x2191;</span> FOTOGRAFÍAS</div>
+            </div>
+            <div class="tarjeta-resumen">
+                <div class="texto-principal">+ DE 2M</div>
+                <div class="texto-secundario"><span class="flecha">&#x2191;</span> VIDEOS 360° Google View</div>
+            </div>
+            <div class="tarjeta-resumen">
+                <div class="texto-principal">7 AÑOS</div>
+                <div class="texto-secundario"><span class="flecha">&#x2191;</span> DE EXPERIENCIA</div>
+            </div>
+        </div>
+    </div>
         `;
         volver();//funcion para el boton volver.`;
     }

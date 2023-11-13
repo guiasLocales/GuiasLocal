@@ -43,21 +43,27 @@
 /* ----------------------------------------- MISION - VISION ------------------------------------------- */
 .contenedor-misionvision {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-top: 100px;
 }
-.mision, .vision{
-  
-    float: left;
-    padding: 50px;
-    text-align: center;
+
+.mision, .vision {
+    width: 48%;
+    display: flex;
+    flex-direction:column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
 }
-.titulo-mision h2, .titulo-vision h2 {
+.mision h2, .vision h2 {
     color: #0367a6;
-    font-size: 5.5rem;
+    font-size: 5.3rem;
     font-weight: 500;
     text-align: left; /* Alineo el título al centro */
+    padding-bottom: 15px;
 }
-.texto-mision p, .texto-vision p {
+.texto-mv p {
     font-size: 1rem;
     margin: 0; /* Elimino el margen para evitar espacio adicional */
     text-align: justify; /* Justifico el texto */
@@ -77,7 +83,14 @@
 }
 
 .subtitulo-somos {
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 20px;
+    padding: 30px;
+}
+
+.subtitulo-somos p {
+    font-size: 1.5rem;
 }
 
 .tarjetas-somos {
@@ -88,19 +101,87 @@
 
 .tarjetas-s {
     width: calc(33.33% - 40px); /* Ancho de cada tarjeta */
+    height: 200px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    text-align: left;
-
-    h3 {
+    text-align: center;
+}
+.tarjetas-s  h3 {
         font-size: 1.5rem;
     }
 
-    p {
+.tarjetas-s p {
         margin-top: 10px;
     }
-}
+
 
 /* ----------------------------------------- MARKETING 360° ------------------------------------------- */
+
+/* ----------------------------------------- RESUMEN NOSOTROS ------------------------------------------- */
+
+.contenedor-resumen {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.tarjeta-resumen {
+    width: 23%;
+    height: 160px;
+    background-color: #0367a6;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.texto-principal {
+    padding: 20px;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ef0a0a;
+    transition: background-color 0.5s;
+}
+
+.texto-secundario {
+    display: block;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    background-color: #0367a6;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.flecha {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    transition: transform 0.5s;
+}
+
+.tarjeta-resumen:hover .texto-principal {
+    background-color: #5233ff;
+}
+
+.tarjeta-resumen:hover .texto-secundario {
+    transform: translateY(-10px);
+}
+
+.tarjeta-resumen:hover .flecha {
+    transform: translateY(-50%);
+}
+
+/* ----------------------------------------- RESUMEN NOSOTROS ------------------------------------------- */

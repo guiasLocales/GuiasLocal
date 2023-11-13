@@ -11,6 +11,10 @@
     padding-left:10px; /* Espacio alrededor del contenido del contenedor */
     padding-right: 10px; /* Espacio alrededor del contenido del contenedor */
 }
+.contenedor-recarga {
+    padding-top: 270px;
+}
+
 
 .contenedor-header {
     position: relative; /* Posición relativa para que el encabezado se pueda superponer a la imagen de fondo */
@@ -187,6 +191,7 @@ header {
 }
 
 /* ----------------------------------------- FILOSOFIA ------------------------------------------- */
+
 /* ----------------------------------------- TARJETAS ------------------------------------------- */
 .contenedor-tarjetas {
     display: flex;
@@ -223,6 +228,7 @@ p {
 }
 
 /* ----------------------------------------- TARJETAS ------------------------------------------- */
+
 /* ----------------------------------------- BOTÓN ------------------------------------------- */
 .contenedor-boton {
     text-align: center;
@@ -246,6 +252,7 @@ p {
 }
 
 /* ----------------------------------------- BOTÓN ------------------------------------------- */
+
 /* ----------------------------------------- NUESTROS SERVICIOS ------------------------------------------- */
 .contenedor-servicios {
     width: 100%;
@@ -362,6 +369,7 @@ p {
 }
 
 /* ----------------------------------------- NUESTROS SERVICIOS ------------------------------------------- */
+
 /* ----------------------------------------- NUESTROS PORTFOLIO ------------------------------------------- */
 .contenedor-portfolio {
     width: 100%;
@@ -456,9 +464,7 @@ p {
     height: 75%;
 }
 
-
 /* ----------------------------------------- NUESTROS PORTFOLIO ------------------------------------------- */
-
 
 /* ----------------------------------------- CARRUSEL ------------------------------------------- */
 
@@ -477,7 +483,6 @@ p {
     display: flex;
     list-style: none;
     overflow: hidden;
-    transition: transform 1s ease; 
 }
 
 .slider-container li {
@@ -489,6 +494,12 @@ p {
     height: 100%;
     object-fit: cover; /* Ajusta la imagen al contenedor manteniendo la proporción */
     border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.slider-container img:hover {
+    transform: scale(1.1); /* Hace que la imagen parezca hacer un zoom al 110% */
 }
 
 /* ----------------------------------------- CARRUSEL ------------------------------------------- */
@@ -498,7 +509,7 @@ p {
 .contenedor-creadores {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to top, #eee8dd, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    background: linear-gradient(to top, #e4ddcf, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .tarjeta-creador {
@@ -530,9 +541,6 @@ p {
     color: #939393;
     margin: 5px 0;
 }
-
-
-
 
 /* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */
 /* ----------------------------------------- FOOTER ------------------------------------------- */
