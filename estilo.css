@@ -31,12 +31,12 @@ header {
     margin-left: 4%; /*Margen izquierdo para el logo*/
 }
 
-nav {
+.nav-header {
     width: 45%;
     margin-right:5%; /* Margen derecho para el menú */
 }
 
-nav ul {
+.ul-header {
     list-style: none;
     display: flex;
     justify-content: space-between; /* Distribuye los elementos uniformemente */
@@ -44,12 +44,12 @@ nav ul {
     margin: 0;
 }
 
-nav li {
+.li-header {
     flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
     text-align: center; /* Alinea el texto en el centro de cada elemento */
 }
 
-nav a {
+.a-header {
     display: block;
     padding: 5px 0px;
     text-decoration: none;
@@ -60,12 +60,12 @@ nav a {
     white-space: nowrap;
 }
 
-nav a:hover {
+.a-header:hover {
     color: rgb(236, 232, 223);
 }
 
 /* ----------------------- Estilo base para la lista desplegable (inicialmente oculta) ------------------------ */
-nav ul ul {
+.ul-sublista {
     display: none;
     position: absolute;
     background-color:  #0367A6 ; /* Color de fondo de la sublista */
@@ -75,25 +75,25 @@ nav ul ul {
 }
 
 /* Estilo para los elementos de la sublista */
-nav ul ul li {
+.li-sublista {
     margin: 0;
     padding: 10px 20px;
 }
 
 /* Estilo para los enlaces de la sublista */
-nav ul ul li a {
+.a-sublista {
     font-weight: 550;
     color:  #FFFFFF; /* Cambia el color de texto de la sublista */
 }
 
 /* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
-nav ul li:hover ul {
+.ul-sublista:hover  {
     display: block;
 }
 
 /* ----------------------------------------- fin lista desplegable ------------------------------------------- */
 
-ul {
+.ul-header {
     list-style: none; /* Quita las viñetas de la lista */
     display: flex; /* Para que los elementos de la lista se muestren en línea */
     justify-content: center; /* Para alinear elementos en el centro */
@@ -105,11 +105,11 @@ ul {
 
 }
 
-li {
+.li-header {
     margin: 0 5px; /* Margen horizontal entre elementos del menú */
     padding: 10px 20px; /* Espacio alrededor del texto del enlace */
 }
-li a{
+.a-header{
     display: block; /* Convierte el enlace en un elemento de bloque */
     color: #FFFFFF; /* Color del texto */
     font-size: 15px; /* Tamaño de la fuente */
@@ -118,7 +118,7 @@ li a{
     white-space: nowrap; /* Evita que el texto se desborde */
 }
 
-li a:hover {
+.a-header:hover {
     color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
 }
 
@@ -390,50 +390,186 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .tarjeta {
-    width: 23%;
-    position: relative;
     cursor: pointer;
-    transition: opacity 1s, background-color 1s;
-    overflow: hidden; 
+    overflow: hidden;
+    position: relative; 
 }
 
-.imagen {
+.imagen-portfolio {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.imagen img {
+
+
+.imagen-portfolio img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    transition: transform 0.5s;
+    display: block;
     
 }
 
 .descripcion {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     width: 100%;
+    height: 100%; 
     position: absolute;
-    top: 80%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(255, 0, 0, 0.7); /* Color rojo con opacidad */
+    padding: 40px;
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    display: none;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s;
+}
+
+.descripcion h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 /* Mostrar la descripción en el paso del cursor */
-.tarjeta:hover .descripcion {
-    display: block;
+.tarjeta:hover .descripcion{
+      opacity: 1;
 }
 
-/* Hacer que la tarjeta sea opaca en el paso del cursor */
-.tarjeta:hover {
-    opacity: 0.7;
+.imagen-clientes {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -70px; /* Ajusta según tu preferencia */
 }
+
+.imagen-clientes img {
+    width: 75%;
+    height: 75%;
+}
+
 
 /* ----------------------------------------- NUESTROS PORTFOLIO ------------------------------------------- */
+
+
+/* ----------------------------------------- CARRUSEL ------------------------------------------- */
+
+/* Asegúrate de que el contenedor tenga un tamaño relativo */
+.swiffy-slider {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 7%;
+}
+
+/* Ajusta el tamaño de las imágenes al tamaño del contenedor */
+.slider-container {
+    height: 320px;
+    background: white;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    transition: transform 1s ease; 
+}
+
+.slider-container li {
+    flex: 0 0 15%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor */
+}
+
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor manteniendo la proporción */
+    border-radius: 15px;
+}
+
+/* ----------------------------------------- CARRUSEL ------------------------------------------- */
+
+/* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */
+
+.contenedor-creadores {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+}
+
+.tarjeta-creador {
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+}
+
+.imagen-creador img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nombre-creador {
+    color: #0367A6;
+}
+
+.nombre-creador i {
+    font-size: 24px;
+}
+
+.nombre-creador h3 {
+    margin: 5px 0;
+}
+
+.nombre-creador p {
+    color: #939393;
+    margin: 5px 0;
+}
+
+
+
+
+/* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */
+/* ----------------------------------------- FOOTER ------------------------------------------- */
+.contenedor-footer {
+    padding: 20px;
+}
+
+.footer-contenido {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 100%; /* Ajusta el tamaño según tus necesidades */
+}
+
+.footer-redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-redes-sociales li {
+    padding: 20px;
+    
+}
+
+.footer-redes-sociales li a {
+    text-decoration: none;
+}
+
+.footer-texto p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+/* ----------------------------------------- FOOTER ------------------------------------------- */
