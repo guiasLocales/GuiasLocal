@@ -13,6 +13,7 @@
 }
 .contenedor-recarga {
     padding-top: 270px;
+    padding-bottom: 70px;
 }
 
 
@@ -509,7 +510,8 @@ p {
 .contenedor-creadores {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to top, #e4ddcf, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    margin-top: 30px;
+    background: linear-gradient(to center, #e4ddcf, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .tarjeta-creador {
@@ -521,7 +523,7 @@ p {
 .imagen-creador img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-bottom: 10px;
 }
 
@@ -540,6 +542,7 @@ p {
 .nombre-creador p {
     color: #939393;
     margin: 5px 0;
+    font-size: 1rem;
 }
 
 /* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */

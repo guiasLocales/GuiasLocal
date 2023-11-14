@@ -208,6 +208,30 @@ function cargarContenido(targetId) {
         `;
         volver();//funcion para el boton volver.`;
     }
+    if (targetId === 'contacto') {
+        holaInfo.innerHTML =`
+        <div id="contenedor-formulario">
+            <form action="#" method="post" class="formulario">
+                <h2 class="form-title">Formulario de Contacto</h2>
+                <h4 class="form-subtitle">Envía tu consulta y en el día te estaremos respuesta</h4>
+    
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre" required>
+    
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Apellido" required>
+    
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+    
+                <label for="consulta" class="form-label">Escribe tu consulta</label>
+                <textarea id="consulta" name="consulta" class="form-textarea" rows="4" placeholder="Escribe tu consulta" required></textarea>
+    
+                <input type="submit" value="Enviar" class="form-submit">
+            </form>
+        </div>
+        `;
+    }
 
     // Agregar más casos sea necesario para otras secciones
 }
