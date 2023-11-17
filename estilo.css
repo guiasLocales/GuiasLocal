@@ -8,8 +8,8 @@
 
 /* ----------------------------------------- HEADER ------------------------------------------- */
 .contenedor{
-    padding-left:10px; /* Espacio alrededor del contenido del contenedor */
-    padding-right: 10px; /* Espacio alrededor del contenido del contenedor */
+    padding-left:2px; /* Espacio alrededor del contenido del contenedor */
+    padding-right: 2px; /* Espacio alrededor del contenido del contenedor */
 }
 .contenedor-recarga {
     padding-top: 270px;
@@ -324,7 +324,7 @@ p {
     font-size: 16px;
     font-weight: bold;
     line-height: 1.4;
-    color: #5c5b5b; /* Color del texto para las frases */
+    color: #1b1a1a; /* Color del texto para las frases */
     margin-left: 50px;
     
 
@@ -347,11 +347,6 @@ p {
 }
 
 .tarjeta.hoja-azul {
-    background: #0367A6;
-    /* Color azul para las tarjetas azules */
-}
-
-.tarjeta-s .azul {
     background: #0367A6;
     /* Color azul para las tarjetas azules */
 }
@@ -474,7 +469,8 @@ p {
     width: 100%;
     height: 320px;
     overflow: hidden;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+    margin-top: 7%;
 }
 
 /* Ajusta el tamaño de las imágenes al tamaño del contenedor */
@@ -490,7 +486,7 @@ p {
     flex: 0 0 15%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor */
 }
 
-.slider-container img {
+.slider-container video {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta la imagen al contenedor manteniendo la proporción */
@@ -499,10 +495,51 @@ p {
     transition: transform 0.3s ease; 
 }
 
-.slider-container img:hover {
+.slider-container video:hover {
     transform: scale(1.1); /* Hace que la imagen parezca hacer un zoom al 110% */
 }
 
+.slider-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content-lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #FFFFFF, #0367A6);   /* Agrega un degradado de color de arriba hacia abajo */
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#lightbox-media video {
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+}
 /* ----------------------------------------- CARRUSEL ------------------------------------------- */
 
 /* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */
@@ -510,42 +547,95 @@ p {
 .contenedor-creadores {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
     background: linear-gradient(to center, #e4ddcf, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .tarjeta-creador {
-    width: 400px;
+    width: 20%;
     text-align: center;
     margin: 20px;
 }
 
-.imagen-creador img {
-    width: 100px;
-    height: 100px;
-    border-radius: 60%;
-    margin-bottom: 10px;
+.imagen-creador {
+    position: relative;
+    width: 100%; /* Ajusta según tus necesidades */
+    height: 120px; /* Ajusta según tus necesidades */
+    padding: 5px;
 }
+
+.imagen-creador img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover; /* Esto ajusta la imagen manteniendo las proporciones */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen-creador i {
+    font-size: 36px;
+    color: #e91010;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 .nombre-creador {
     color: #0367A6;
 }
 
-.nombre-creador i {
-    font-size: 24px;
+.nombre-creador h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
 }
 
-.nombre-creador h3 {
-    margin: 5px 0;
+.estrellas {
+    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.estrella-dorada {
+    color: #f2b01e; /* Establece el color dorado */
+    margin-right: 5px; /* Ajusta el margen derecho según tus necesidades */
 }
 
 .nombre-creador p {
-    color: #939393;
+    color: #161616;
     margin: 5px 0;
     font-size: 1rem;
 }
 
-/* ----------------------------------------- TARJETAS CREADORES ------------------------------------------- */
+/* ----------------------------------------- TARJETAS RESEÑAS ------------------------------------------- */
+/* ----------------------------------------- WHATSAPP ------------------------------------------- */
+.whatsapp-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ----------------------------------------- WHATSAPP ------------------------------------------- */
+
 /* ----------------------------------------- FOOTER ------------------------------------------- */
 .contenedor-footer {
     padding: 20px;
