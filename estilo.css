@@ -563,12 +563,12 @@ p {
 .imagen-creador {
     position: relative;
     width: 100%; /* Ajusta según tus necesidades */
-    height: 120px; /* Ajusta según tus necesidades */
+    height: 150px; /* Ajusta según tus necesidades */
     padding: 5px;
 }
 
 .imagen-creador img {
-    width: 300px;
+    width: 200px;
     height: 100%;
     object-fit: cover; /* Esto ajusta la imagen manteniendo las proporciones */
     position: absolute;
