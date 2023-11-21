@@ -495,6 +495,10 @@ p {
     transition: transform 0.3s ease; 
 }
 
+.slider-container video::-webkit-media-controls {
+    display: none;
+}
+
 .slider-container video:hover {
     transform: scale(1.1); /* Hace que la imagen parezca hacer un zoom al 110% */
 }
