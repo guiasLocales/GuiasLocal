@@ -77,6 +77,7 @@ header {
     z-index: -1; /* Para que esté por encima de otros elementos */
     margin: 0;
     padding: 10px 20px;
+    
 }
 
 /* Estilo para los elementos de la sublista */
@@ -89,11 +90,15 @@ header {
 .a-sublista {
     font-weight: 550;
     color:  #FFFFFF; /* Cambia el color de texto de la sublista */
+    text-decoration: none;
+
 }
 
 /* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
-.ul-sublista:hover  {
+.li-header:hover .ul-sublista {
     display: block;
+    list-style: none;
+    border-radius: 7px;
 }
 
 /* ----------------------------------------- fin lista desplegable ------------------------------------------- */
@@ -294,11 +299,12 @@ header {
     color: #000000;
     border-radius: 15px;
     transition: background-color 0.3s;
+    height: auto;
 }
 
 .tarjeta-s.gris {
     background: #fff; /* Color gris para las tarjetas grises */
-    color: #3C3C3C; /* Color de texto para las tarjetas grises */
+    color: #999797; /* Color de texto para las tarjetas grises */
 }
 
 .tarjeta-s.azul {
@@ -306,8 +312,18 @@ header {
     color: #fff; /* Color de texto para las tarjetas azules */
 }
 
+/* Estilo específico para el texto dentro de tarjetas azules */
+.tarjeta-s.azul p {
+    color: #fff; /* Color de texto blanco para los párrafos dentro de tarjetas azules */
+}
+
+/* Estilo específico para el texto dentro de tarjetas grises */
+.tarjeta-s.gris p {
+    color: #3f3e3e; /* Color de texto gris para los párrafos dentro de tarjetas grises */
+}
+
 .titulo-tarjetas {
-    width: 48%;
+    width: 55%;
 }
 
 /* Configura el título y el párrafo para ocupar el 40% del ancho cada uno */
@@ -316,11 +332,6 @@ header {
     width: 70%;
     font-size: 50px;
     padding: 50px;
-
-}
-
-.titulo-adm{
-    width: 100%;
 }
 
 .tarjeta-s p {
@@ -329,18 +340,14 @@ header {
     font-weight: bold;
     line-height: 1.4;
     color: #1b1a1a; /* Color del texto para las frases */
-    margin-left: 50px;
-    
-
-    
-
+    margin-left: 50px; 
 }
 
 /* Configura la imagen para ocupar el 60% del ancho disponible */
 .tarjeta-s img {
-    margin-left: 200px;
+    margin-left: 10%;
     width: 30%;
-    padding: 30px;
+    padding: 20px;
 }
 
 .tarjetas-servicios {
@@ -656,14 +663,19 @@ header {
 
 /* ----------------------------------------- FOOTER ------------------------------------------- */
 .contenedor-footer {
+    width: 100%;
     padding: 20px;
     background-image: url('./img/15caa100-2ca3-45bb-966f-9a866e450934.gif');
 }
 
 .footer-contenido {
     width: 15%;
+}
+
+footer{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-logo img {
@@ -673,22 +685,94 @@ header {
 .footer-redes-sociales ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 170px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .footer-redes-sociales li {
-    padding: 20px;
-    
+    margin: 0 5px;
 }
 
 .footer-redes-sociales li a {
     text-decoration: none;
+    color: #000;
 }
 
-.footer-texto p {
-    margin: 0; /* Elimina el margen del párrafo */
+.footer-redes-sociales li.facebook a i {
+    font-size: 24px;
+    color: #0367A6; /* Color azul para Facebook */
+}
+
+.footer-redes-sociales li.instagram a i {
+    font-size: 24px;
+    color: #E4405F; /* Color rojo para Instagram */
+}
+/* ----------------------------- nav footer ------------------------------ */
+.nav-footer{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+}
+
+.ul-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    padding: 10px 0;
+    margin: 10px;
+    margin-top: -7px;
+    border-radius: 15px;
+    background-color: #eb6063; /* Color de fondo del menú */
+}
+
+.ul-sublista-footer {
+    display: none;
+    position: absolute;
+    background-color:  #0367A6 ; /* Color de fondo de la sublista */
+    z-index: 1; /* Para que esté por encima de otros elementos */
+    margin: 0;
+    padding: 0px 20px;
+}
+
+/* Estilo para los elementos de la sublista */
+.li-sublistaf {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+/* Estilo para los enlaces de la sublista */
+.a-footer {
+    font-weight: 550;
+    color:  #ffffff; /* Cambia el color de texto de la sublista */
+    text-decoration: none;
+}
+
+.a-footer:hover {
+    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
+}
+
+.li-sublistaf {
+    flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
+    text-align: center; /* Alinea el texto en el centro de cada elemento */
+}
+
+/* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
+.li-footer:hover .ul-sublista-footer{
+    display: block;
+    list-style: none;
+    border-radius: 7px;
+}
+
+.a-sublistaf {
+    color: rgb(255, 255, 255); /* Cambia el color del texto en estado de hover */
+    text-decoration: none;
+    
+}
+
+.a-sublistaf:hover {
+    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
 }
 
 /* ----------------------------------------- FOOTER ------------------------------------------- */
