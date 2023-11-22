@@ -287,7 +287,7 @@ header {
 
 .tarjeta-s {
     display: flex;
-    width: 90%;
+    width: 88%;
     padding: 20px;
     margin: 10px;
     /* Color gris para las tarjetas grises */
@@ -319,6 +319,10 @@ header {
 
 }
 
+.titulo-adm{
+    width: 100%;
+}
+
 .tarjeta-s p {
     width: 70%;
     font-size: 16px;
@@ -328,11 +332,15 @@ header {
     margin-left: 50px;
     
 
+    
+
 }
 
 /* Configura la imagen para ocupar el 60% del ancho disponible */
 .tarjeta-s img {
-    width: 50%;
+    margin-left: 200px;
+    width: 30%;
+    padding: 30px;
 }
 
 .tarjetas-servicios {
@@ -372,7 +380,8 @@ header {
 }
 
 .titulo-portfolio {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 3rem; /* Tamaño de fuente más grande */
     padding: 20px;
@@ -384,13 +393,14 @@ header {
     /* Color gris para "nuestros" */
 }
 
-.titulo-portfolio .gris {
+.gris {
     color: #939393;
     /* Color azul para "servicios" */
 }
 
 /* Estilo base para las tarjetas */
 .tarjetas-portfolio {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -398,9 +408,12 @@ header {
 }
 
 .tarjeta {
+    width: 22%;
     cursor: pointer;
     overflow: hidden;
     position: relative; 
+    padding: 5px;
+    margin: 0;
 }
 
 .imagen-portfolio {
@@ -438,8 +451,9 @@ header {
 }
 
 .descripcion h4 {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 80%;
 }
 
 /* Mostrar la descripción en el paso del cursor */
