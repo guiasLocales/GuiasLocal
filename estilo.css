@@ -331,7 +331,7 @@ header {
     text-align: left;
     width: 70%;
     font-size: 50px;
-    padding: 50px;
+    padding: 40px;
 }
 
 .tarjeta-s p {
@@ -340,12 +340,13 @@ header {
     font-weight: bold;
     line-height: 1.4;
     color: #1b1a1a; /* Color del texto para las frases */
-    margin-left: 50px; 
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 /* Configura la imagen para ocupar el 60% del ancho disponible */
 .tarjeta-s img {
-    margin-left: 10%;
+    margin-left: 7%;
     width: 30%;
     padding: 20px;
 }
