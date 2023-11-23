@@ -675,7 +675,6 @@ header {
 
 footer{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -686,7 +685,8 @@ footer{
 .footer-redes-sociales ul {
     list-style: none;
     padding: 0;
-    margin-top: 170px;
+    margin-top: 175px;
+    margin-left: -50px;
     display: flex;
     flex-direction: row;
 }
@@ -711,21 +711,23 @@ footer{
 }
 /* ----------------------------- nav footer ------------------------------ */
 .nav-footer{
-    width: 60%;
     margin: 0 auto;
     padding: 0;
-    margin: 0;
+    margin-left: 20px;
+    
 }
 
 .ul-footer {
     list-style: none;
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos uniformemente */
-    padding: 10px 0;
-    margin: 10px;
-    margin-top: -7px;
-    border-radius: 15px;
-    background-color: #eb6063; /* Color de fondo del menú */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.li-footer{
+    display: block;
+    margin: 15px 5px;
 }
 
 .ul-sublista-footer {
@@ -734,27 +736,24 @@ footer{
     background-color:  #0367A6 ; /* Color de fondo de la sublista */
     z-index: 1; /* Para que esté por encima de otros elementos */
     margin: 0;
-    padding: 0px 20px;
-}
-
-/* Estilo para los elementos de la sublista */
-.li-sublistaf {
-    margin: 0;
-    padding: 10px 20px;
+    padding: 7px;
+    border-radius: 7px;
 }
 
 /* Estilo para los enlaces de la sublista */
 .a-footer {
     font-weight: 550;
-    color:  #ffffff; /* Cambia el color de texto de la sublista */
+    color:  #0367a6; /* Cambia el color de texto de la sublista */
     text-decoration: none;
 }
 
 .a-footer:hover {
-    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
+    color: #ef0a0a; /* Cambia el color del texto en estado de hover */
 }
-
+/* Estilo para los elementos de la sublista */
 .li-sublistaf {
+    margin: 5px 0px;
+    padding: 10px 20px;
     flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
     text-align: center; /* Alinea el texto en el centro de cada elemento */
 }
@@ -775,5 +774,43 @@ footer{
 .a-sublistaf:hover {
     color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
 }
+
+.footer-consulta {
+    width: 30%;
+    background-color: #f8f8f828; /* Color de fondo de la tarjeta */
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados de la tarjeta */
+    padding: 20px; /* Relleno interno de la tarjeta */
+    margin-top: 20px; /* Margen superior para separar de otros elementos */
+    margin-left: 80px;
+}
+
+.consulta-titulo {
+    font-size: 1.5em; /* Tamaño de fuente del título */
+    margin-bottom: 15px; /* Margen inferior para separar el título de los campos del formulario */
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column; /* Colocar los elementos uno debajo del otro */
+}
+
+#formulario label {
+    margin-bottom: 8px; /* Margen inferior para separar etiquetas de campos de entrada */
+}
+
+#formulario input,
+#formulario textarea {
+    width: 100%; /* Ocupar el 100% del ancho disponible */
+    padding: 8px; /* Relleno interno de campos de entrada y área de texto */
+    margin-bottom: 15px; /* Margen inferior para separar campos de entrada y área de texto */
+}
+
+#formulario input[type="submit"] {
+    background-color: #0367A6; /* Color de fondo del botón de envío */
+    color: #fff; /* Color del texto del botón de envío */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
 
 /* ----------------------------------------- FOOTER ------------------------------------------- */
