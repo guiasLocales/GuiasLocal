@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Tipo de fuente */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* ----------------------------------------- HEADER ------------------------------------------- */
@@ -88,9 +89,10 @@ header {
 
 /* Estilo para los enlaces de la sublista */
 .a-sublista {
-    font-weight: 550;
     color:  #FFFFFF; /* Cambia el color de texto de la sublista */
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -112,7 +114,6 @@ header {
     border-top-left-radius: 15px; /* Borde redondeado derecho */
     border-bottom-right-radius: 15px; /* Borde redondeado derecho */
     border-top-right-radius: 15px; /* Borde redondeado derecho */
-
 }
 
 .li-header {
@@ -126,6 +127,8 @@ header {
     text-decoration: none; /* Quita la decoración de texto (subrayado) */
     transition: inherit; /* Agrega una transición para suavizar el cambio de color */
     white-space: nowrap; /* Evita que el texto se desborde */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .a-header:hover {
@@ -145,9 +148,9 @@ header {
 }
 
 .imagen-fondo h1 {
-    margin-top: 8%;
     color: #0367A6 !important; /* Cambia el color del texto */
     font-size: 7.5rem; /* Ajusta el tamaño de fuente */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
@@ -165,7 +168,8 @@ header {
 .contenedor-frase h2 {
     color: #939393; /* Color del texto */
     font-size: 3.2rem; /* Ajusta el tamaño de fuente */
-    font-weight: 500; /* Ajusta el grosor de la fuente */
+    font-weight:bold; /* Ajusta el grosor de la fuente */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-frase .color-especial {
@@ -184,12 +188,14 @@ header {
     color: #FF0000; /* Color del texto */
     font-size: 3.2rem; /* Ajusta el tamaño de fuente */
     font-weight:bold; /* Ajusta el grosor de la fuente */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-filosofia p {
     color: #000000; /* Color del texto para las frases */
-    font-size: 1rem; /* Tamaño de fuente para las frases */
+    font-size: 1.2rem; /* Tamaño de fuente para las frases */
     line-height: 1.6; /* Espaciado entre líneas */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-filosofia strong {
@@ -225,12 +231,14 @@ header {
     font-size: 1.6rem;
     margin-top: 20px;
     color: #4d4545; /* Color del texto para las frases */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .tarjeta p {
     font-size: 1.2rem;
     margin-top: 5px;
-    color: #5c5b5b; /* Color del texto para las frases */
+    color: #363636; /* Color del texto para las frases */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ----------------------------------------- TARJETAS ------------------------------------------- */
@@ -244,12 +252,13 @@ header {
 
 .boton-conocer {
     background-color: #d6dcdc; /* Color gris */
-    color: #1b1a1a;
+    color: #000000;
     padding: 15px 25px;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, cursor 0.3s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .boton-conocer:hover {
@@ -273,6 +282,7 @@ header {
     text-align: center; /* Alinea el texto al centro */
     font-size: 3rem; /* Tamaño de fuente más grande */
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -284,11 +294,6 @@ header {
     color: #0367A6; /* Color azul para "servicios" */
 }
 
-/* Estilo para los otros títulos */
-.tarjeta-s h2 {
-    text-align: center;
-    font-size: 1.4rem;
-}
 
 .tarjeta-s {
     display: flex;
@@ -315,11 +320,13 @@ header {
 /* Estilo específico para el texto dentro de tarjetas azules */
 .tarjeta-s.azul p {
     color: #fff; /* Color de texto blanco para los párrafos dentro de tarjetas azules */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Estilo específico para el texto dentro de tarjetas grises */
 .tarjeta-s.gris p {
     color: #3f3e3e; /* Color de texto gris para los párrafos dentro de tarjetas grises */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .titulo-tarjetas {
@@ -328,6 +335,8 @@ header {
 
 /* Configura el título y el párrafo para ocupar el 40% del ancho cada uno */
 .tarjeta-s h2 {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
     width: 70%;
     font-size: 50px;
@@ -393,6 +402,7 @@ header {
     text-align: center;
     font-size: 3rem; /* Tamaño de fuente más grande */
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -460,8 +470,13 @@ header {
 
 .descripcion h4 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descripcion span {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Mostrar la descripción en el paso del cursor */
@@ -615,6 +630,8 @@ header {
 .nombre-creador h3 {
     font-size: 1.4rem;
     margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .estrellas {
@@ -628,9 +645,11 @@ header {
 }
 
 .nombre-creador p {
-    color: #161616;
+    color: #181818;
     margin: 5px 0;
     font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* ----------------------------------------- TARJETAS RESEÑAS ------------------------------------------- */
@@ -713,21 +732,21 @@ footer{
 .nav-footer{
     margin: 0 auto;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 25px;
     
 }
 
 .ul-footer {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0;
     margin: 0;
 }
 
 .li-footer{
     display: block;
-    margin: 15px 5px;
+    margin: 10px 5px;
 }
 
 .ul-sublista-footer {
@@ -742,9 +761,10 @@ footer{
 
 /* Estilo para los enlaces de la sublista */
 .a-footer {
-    font-weight: 550;
     color:  #0367a6; /* Cambia el color de texto de la sublista */
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .a-footer:hover {
@@ -753,7 +773,7 @@ footer{
 /* Estilo para los elementos de la sublista */
 .li-sublistaf {
     margin: 5px 0px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
     text-align: center; /* Alinea el texto en el centro de cada elemento */
 }
@@ -768,49 +788,61 @@ footer{
 .a-sublistaf {
     color: rgb(255, 255, 255); /* Cambia el color del texto en estado de hover */
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     
 }
 
 .a-sublistaf:hover {
-    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
+    color: #ef0a0a; /* Cambia el color del texto en estado de hover */
 }
 
 .footer-consulta {
-    width: 30%;
-    background-color: #f8f8f828; /* Color de fondo de la tarjeta */
-    border: 1px solid #ddd; /* Borde de la tarjeta */
-    border-radius: 8px; /* Bordes redondeados de la tarjeta */
-    padding: 20px; /* Relleno interno de la tarjeta */
-    margin-top: 20px; /* Margen superior para separar de otros elementos */
-    margin-left: 80px;
+    width: 50%;
+    padding: 20px;
+    color: #0367a6;
+   
 }
 
 .consulta-titulo {
-    font-size: 1.5em; /* Tamaño de fuente del título */
-    margin-bottom: 15px; /* Margen inferior para separar el título de los campos del formulario */
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 #formulario {
     display: flex;
-    flex-direction: column; /* Colocar los elementos uno debajo del otro */
+    flex-direction: column;
 }
 
-#formulario label {
-    margin-bottom: 8px; /* Margen inferior para separar etiquetas de campos de entrada */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
 }
 
-#formulario input,
-#formulario textarea {
-    width: 100%; /* Ocupar el 100% del ancho disponible */
-    padding: 8px; /* Relleno interno de campos de entrada y área de texto */
-    margin-bottom: 15px; /* Margen inferior para separar campos de entrada y área de texto */
+.campo label {
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 8px;
 }
 
 #formulario input[type="submit"] {
-    background-color: #0367A6; /* Color de fondo del botón de envío */
-    color: #fff; /* Color del texto del botón de envío */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    background-color: #0367A6;
+    color: #fff;
+    cursor: pointer;
+    width: 30%;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
 }
+
 
 
 /* ----------------------------------------- FOOTER ------------------------------------------- */
