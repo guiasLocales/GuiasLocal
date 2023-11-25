@@ -416,6 +416,44 @@ header {
     /* Color azul para "servicios" */
 }
 
+.tarjeta { 
+    margin-right: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    width: 22%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; 
+    padding: 5px;
+    margin: 0;
+}
+
+.tarjeta.hidden {
+    opacity: 0;
+    transform: translateY(-20px); /* Ajusta según sea necesario */
+    pointer-events: none;
+}
+
+
+.botones-navegador-portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.botones-navegador-portfolio button {
+    padding: 8px 8px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    background-color: #0367A6;
+    color: #ffffff;
+
+}
+
+
 /* Estilo base para las tarjetas */
 .tarjetas-portfolio {
     width: 100%;
@@ -423,15 +461,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     
-}
-
-.tarjeta {
-    width: 22%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative; 
-    padding: 5px;
-    margin: 0;
 }
 
 .imagen-portfolio {
@@ -487,9 +516,7 @@ header {
 .imagen-clientes {
     display: flex;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-    margin-top: -70px; /* Ajusta según tu preferencia */
+    
 }
 
 .imagen-clientes img {
@@ -690,6 +717,7 @@ header {
 
 .footer-contenido {
     width: 15%;
+    margin-left: 120px;
 }
 
 footer{
@@ -732,7 +760,7 @@ footer{
 .nav-footer{
     margin: 0 auto;
     padding: 0;
-    margin-left: 25px;
+    margin-left: 100px;
     
 }
 
@@ -841,6 +869,17 @@ footer{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.footerhr {
+    width: 100%; /* Puedes ajustar el valor según tus necesidades */   
+    border: 1.5px solid #0367A6;
+}
+
+.footerhvertical {
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    border: 1.5px solid #0367A6;
+    margin: 0 130px;;
 }
 
 

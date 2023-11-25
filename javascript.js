@@ -1,93 +1,96 @@
 //  ------------ Opacidad del encabezado al hacer scroll -------------------
 
 window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    if (window.scrollY > 100) { // Cambia 100 al valor que desees
-        header.style.opacity = "0.0";
-        header.style.hidden // Cambia la opacidad al valor deseado
-    } else {
-        header.style.opacity = "1";
-    }
+  var header = document.querySelector("header");
+  if (window.scrollY > 100) {
+    // Cambia 100 al valor que desees
+    header.style.opacity = "0.0";
+    header.style.hidden; // Cambia la opacidad al valor deseado
+  } else {
+    header.style.opacity = "1";
+  }
 });
 //  ------------ Opacidad del encabezado al hacer scroll -------------------
 
 //  --------------- carrusel -------------------
-document.addEventListener('DOMContentLoaded', function () {
-    const sliderItems = document.querySelectorAll('.slider-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxTitle = document.getElementById('lightbox-title');
-    const lightboxDescription = document.getElementById('lightbox-description');
-    const lightboxMedia = document.getElementById('lightbox-media');
-    const closeBtn = document.getElementById('closeBtn');
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderItems = document.querySelectorAll(".slider-item");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxTitle = document.getElementById("lightbox-title");
+  const lightboxDescription = document.getElementById("lightbox-description");
+  const lightboxMedia = document.getElementById("lightbox-media");
+  const closeBtn = document.getElementById("closeBtn");
 
-    sliderItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const type = item.getAttribute('data-type');
-            const title = item.getAttribute('data-title');
-            const description = item.getAttribute('data-description');
-            const mediaContent = item.innerHTML;
+  sliderItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const type = item.getAttribute("data-type");
+      const title = item.getAttribute("data-title");
+      const description = item.getAttribute("data-description");
+      const mediaContent = item.innerHTML;
 
-            // lightboxTitle.innerHTML = title;
-            // lightboxDescription.innerHTML = description;
+      // lightboxTitle.innerHTML = title;
+      // lightboxDescription.innerHTML = description;
 
-            if (type === 'video') {
-                lightboxMedia.innerHTML = mediaContent;
-                // Pausar el video si está reproduciéndose (para evitar duplicar la reproducción)
-                const video = lightboxMedia.querySelector('video');
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0; // Reiniciar la reproducción al abrir el lightbox
-                }
-            } else {
-                lightboxMedia.innerHTML = `<img src="${item.querySelector('img').src}" alt="${title}">`;
-            }
-
-            lightbox.style.display = 'block';
-        });
-    });
-
-    function closeLightbox() {
-        console.log('Cerrando lightbox');
-        lightbox.style.display = 'none';
-        // Pausar el video si está reproduciéndose
-        const video = lightboxMedia.querySelector('video');
+      if (type === "video") {
+        lightboxMedia.innerHTML = mediaContent;
+        // Pausar el video si está reproduciéndose (para evitar duplicar la reproducción)
+        const video = lightboxMedia.querySelector("video");
         if (video) {
-            video.pause();
+          video.pause();
+          video.currentTime = 0; // Reiniciar la reproducción al abrir el lightbox
         }
+      } else {
+        lightboxMedia.innerHTML = `<img src="${
+          item.querySelector("img").src
+        }" alt="${title}">`;
+      }
+
+      lightbox.style.display = "block";
+    });
+  });
+
+  function closeLightbox() {
+    console.log("Cerrando lightbox");
+    lightbox.style.display = "none";
+    // Pausar el video si está reproduciéndose
+    const video = lightboxMedia.querySelector("video");
+    if (video) {
+      video.pause();
     }
-       // Agrega un evento clic al botón de cierre
-    closeBtn.addEventListener('click', function () {
-        closeLightbox();
-    });
+  }
+  // Agrega un evento clic al botón de cierre
+  closeBtn.addEventListener("click", function () {
+    closeLightbox();
+  });
 
-    window.closeLightbox = closeLightbox;
+  window.closeLightbox = closeLightbox;
 
-    lightbox.addEventListener('click', function () {
-        console.log('Haciendo clic en el lightbox');
-        // Cerrar lightbox al hacer clic fuera del contenido
-        closeLightbox();
-    });
+  lightbox.addEventListener("click", function () {
+    console.log("Haciendo clic en el lightbox");
+    // Cerrar lightbox al hacer clic fuera del contenido
+    closeLightbox();
+  });
 
-    lightboxMedia.addEventListener('click', function (event) {
-        // Detener la propagación del clic dentro del lightboxMedia para evitar que cierre el lightbox
-        event.stopPropagation();
-    });
+  lightboxMedia.addEventListener("click", function (event) {
+    // Detener la propagación del clic dentro del lightboxMedia para evitar que cierre el lightbox
+    event.stopPropagation();
+  });
 
-    // Reproducir el video en silencio al pasar el cursor
-    sliderItems.forEach(item => {
-        const video = item.querySelector('video');
-        if (video) {
-            item.addEventListener('mouseenter', function () {
-                video.volume = 0; // Establecer volumen en silencio
-                video.play();
-            });
+  // Reproducir el video en silencio al pasar el cursor
+  sliderItems.forEach((item) => {
+    const video = item.querySelector("video");
+    if (video) {
+      item.addEventListener("mouseenter", function () {
+        video.volume = 0; // Establecer volumen en silencio
+        video.play();
+      });
 
-            item.addEventListener('mouseleave', function () {
-                video.pause();
-                video.currentTime = 0; // Reiniciar la reproducción al salir del cursor
-            });
-        }
-    });
+      item.addEventListener("mouseleave", function () {
+        video.pause();
+        video.currentTime = 0; // Reiniciar la reproducción al salir del cursor
+      });
+    }
+  });
 });
 
 //  --------------- carrusel -------------------
@@ -95,20 +98,76 @@ document.addEventListener('DOMContentLoaded', function () {
 //  --------------- Boton Whatsapp-------------------
 
 function openWhatsApp() {
-    const whatsappURL = "https://api.whatsapp.com/send/?phone=5493513082238&text=Hola+Leandro+me+interesar%C3%ADa+saber+m%C3%A1s+sobre+Gu%C3%ADas+locales&type=phone_number&app_absent=0";
-    window.open(whatsappURL, '_blank');
+  const whatsappURL =
+    "https://api.whatsapp.com/send/?phone=5493513082238&text=Hola+Leandro+me+interesar%C3%ADa+saber+m%C3%A1s+sobre+Gu%C3%ADas+locales&type=phone_number&app_absent=0";
+  window.open(whatsappURL, "_blank");
 }
 
 //  --------------- Boton Whatsapp-------------------
 
+// ---------------------------- Nuestro Portafolio ------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  var tarjetas = document.querySelectorAll(".tarjeta");
+
+  // Asocia un evento de clic a cada botón
+  document
+    .getElementById("btn-analisis-de-datos")
+    .addEventListener("click", function () {
+      filtrarTarjetas("analisis-de-datos");
+    });
+  document
+    .getElementById("btn-business-manager")
+    .addEventListener("click", function () {
+      filtrarTarjetas("business-manager");
+    });
+  document
+    .getElementById("btn-fotografia-360")
+    .addEventListener("click", function () {
+      filtrarTarjetas("fotografia-360");
+    });
+  document
+    .getElementById("btn-redes-sociales")
+    .addEventListener("click", function () {
+      filtrarTarjetas("redes-sociales");
+    });
+  document.getElementById("btn-todas").addEventListener("click", function () {
+    mostrarTodasLasTarjetas();
+  });
+
+  // Función para mostrar solo las tarjetas de una categoría
+  function filtrarTarjetas(categoria) {
+    tarjetas.forEach(function (tarjeta) {
+        var categoriasAtributo = tarjeta.getAttribute("data-categorias");
+        if (categoriasAtributo) {
+            var categorias = categoriasAtributo.split(" ");
+            if (categorias.includes(categoria) || categoria === "todas") {
+                tarjeta.classList.remove("hidden");
+            } else {
+                tarjeta.classList.add("hidden");
+            }
+        }
+    });
+}
+
+  // Función para mostrar todas las tarjetas
+  function mostrarTodasLasTarjetas() {
+    tarjetas.forEach(function (tarjeta) {
+      tarjeta.style.display = "block";
+      tarjeta.classList.remove("hidden");
+    });
+  }
+});
+
+// ---------------------------- Nuestro Portafolio ------------------------
+
 //  --------------- Recarga Boton Conocer mas - Nosotros -------------------
-let displayInfo = document.querySelector('.contenedor-recarga');
+let displayInfo = document.querySelector(".contenedor-recarga");
 
-let fourCards = document.querySelector('.boton-conocer');
-fourCards.addEventListener('click', e => {
-    e.preventDefault();
+let fourCards = document.querySelector(".boton-conocer");
+fourCards.addEventListener("click", (e) => {
+  e.preventDefault();
 
-    displayInfo.innerHTML = `
+  displayInfo.innerHTML = `
     <div class="contenedor_nosotros">
     <div class="contenedor-titulo-nosotros">
         <div class="titulo-n">
@@ -191,31 +250,31 @@ fourCards.addEventListener('click', e => {
     </div>
 </div>
     `;
-    volver();//funcion para el boton volver.
+  volver(); //funcion para el boton volver.
 });
 
 //  --------------- Recarga nav-header obteniendo el ID segun el contenido -------------------
-let holaInfo = document.querySelector('.contenedor-recarga');
+let holaInfo = document.querySelector(".contenedor-recarga");
 
 // Agrega un controlador de clic a todos los enlaces con la clase "section-link"
-document.querySelectorAll('.section-link').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
+document.querySelectorAll(".section-link").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
 
-        // Obtiene el ID del enlace y carga el contenido correspondiente
-        let targetId = link.getAttribute('href').substring(1);
-        cargarContenido(targetId);
-    });
+    // Obtiene el ID del enlace y carga el contenido correspondiente
+    let targetId = link.getAttribute("href").substring(1);
+    cargarContenido(targetId);
+  });
 });
 
 // Función para cargar el contenido en el contenedor
 function cargarContenido(targetId) {
-    // Implementa la lógica para cargar el contenido según el ID
-    // Se Puedes utilizar un objeto o un switch para determinar qué contenido cargar
+  // Implementa la lógica para cargar el contenido según el ID
+  // Se Puedes utilizar un objeto o un switch para determinar qué contenido cargar
 
-    // Ejemplo de contenido para la sección "Nosotros"
-    if (targetId === 'nosotros') {
-        holaInfo.innerHTML =`
+  // Ejemplo de contenido para la sección "Nosotros"
+  if (targetId === "nosotros") {
+    holaInfo.innerHTML = `
         <div class="contenedor_nosotros">
         <div class="contenedor-titulo-nosotros">
             <div class="titulo-n">
@@ -298,10 +357,10 @@ function cargarContenido(targetId) {
         </div>
     </div>
         `;
-        volver();//funcion para el boton volver.`;
-    }
-    if (targetId === 'contacto') {
-        holaInfo.innerHTML =`
+    volver(); //funcion para el boton volver.`;
+  }
+  if (targetId === "contacto") {
+    holaInfo.innerHTML = `
         <div id="contenedor-formulario">
             <form action="#" method="post" class="formulario">
                 <h2 class="form-title">Formulario de Contacto</h2>
@@ -323,18 +382,17 @@ function cargarContenido(targetId) {
             </form>
         </div>
         `;
-    }
+  }
 
-    // Agregar más casos sea necesario para otras secciones
+  // Agregar más casos sea necesario para otras secciones
 }
 
 // Función para volver al contenido inicial
 function volver() {
-    let btnVolver = document.querySelector('#volver');
+  let btnVolver = document.querySelector("#volver");
 
-    btnVolver.addEventListener('click', e => {
-        e.preventDefault()
-        location.href = 'http://127.0.0.1:';
-    });
+  btnVolver.addEventListener("click", (e) => {
+    e.preventDefault();
+    location.href = "http://127.0.0.1:";
+  });
 }
-
