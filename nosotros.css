@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Tipo de fuente */
+    font-family: 'Open Sans', sans-serif;
 }
 /* ----------------------------------------- GENERAL ------------------------------------------- */
 
@@ -19,6 +19,7 @@
 .titulo-n h1{
     font-size: 4.5rem; /* Tamaño grande para el título */
     font-weight: normal; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .titulo-n{
@@ -36,7 +37,9 @@
 .subtitulo-n h4 {
     font-weight:500;
     font-size: 1.5rem; /* Tamaño grande para el subtítulo */
+    font-family: 'Open Sans', sans-serif;
     margin-top: 5px; /* Margen superior para separar el subtítulo del título */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ----------------------------------------- TITULO ------------------------------------------- */
@@ -49,24 +52,28 @@
 }
 
 .mision, .vision {
-    width: 48%;
+    width: 50%;
     display: flex;
     flex-direction:column;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 80px;
+    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 .mision h2, .vision h2 {
     color: #0367a6;
     font-size: 5.3rem;
     font-weight: 500;
-    text-align: left; /* Alineo el título al centro */
-    padding-bottom: 15px;
+    text-align: center; /* Alineo el título al centro */
+    padding-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
 }
-.texto-mv p {
-    font-size: 1rem;
-    margin: 0; /* Elimino el margen para evitar espacio adicional */
-    text-align: justify; /* Justifico el texto */
+
+.mision p, .vision p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding: 30px;
 }
 /* ----------------------------------------- MISION - VISION ------------------------------------------- */
 
@@ -91,6 +98,7 @@
 
 .subtitulo-somos p {
     font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .tarjetas-somos {
@@ -110,10 +118,14 @@
 }
 .tarjetas-s  h3 {
         font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-top: 15px;
     }
 
 .tarjetas-s p {
         margin-top: 10px;
+        font-family: 'Open Sans', sans-serif;
     }
 
 
