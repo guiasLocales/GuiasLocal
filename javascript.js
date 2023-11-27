@@ -11,90 +11,6 @@ window.addEventListener("scroll", function () {
   }
 });
 //  ------------ Opacidad del encabezado al hacer scroll -------------------
-
-//  --------------- carrusel -------------------
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderItems = document.querySelectorAll(".slider-item");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxTitle = document.getElementById("lightbox-title");
-  const lightboxDescription = document.getElementById("lightbox-description");
-  const lightboxMedia = document.getElementById("lightbox-media");
-  const closeBtn = document.getElementById("closeBtn");
-
-  sliderItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      const type = item.getAttribute("data-type");
-      const title = item.getAttribute("data-title");
-      const description = item.getAttribute("data-description");
-      const mediaContent = item.innerHTML;
-
-      // lightboxTitle.innerHTML = title;
-      // lightboxDescription.innerHTML = description;
-
-      if (type === "video") {
-        lightboxMedia.innerHTML = mediaContent;
-        // Pausar el video si está reproduciéndose (para evitar duplicar la reproducción)
-        const video = lightboxMedia.querySelector("video");
-        if (video) {
-          video.pause();
-          video.currentTime = 0; // Reiniciar la reproducción al abrir el lightbox
-        }
-      } else {
-        lightboxMedia.innerHTML = `<img src="${
-          item.querySelector("img").src
-        }" alt="${title}">`;
-      }
-
-      lightbox.style.display = "block";
-    });
-  });
-
-  function closeLightbox() {
-    console.log("Cerrando lightbox");
-    lightbox.style.display = "none";
-    // Pausar el video si está reproduciéndose
-    const video = lightboxMedia.querySelector("video");
-    if (video) {
-      video.pause();
-    }
-  }
-  // Agrega un evento clic al botón de cierre
-  closeBtn.addEventListener("click", function () {
-    closeLightbox();
-  });
-
-  window.closeLightbox = closeLightbox;
-
-  lightbox.addEventListener("click", function () {
-    console.log("Haciendo clic en el lightbox");
-    // Cerrar lightbox al hacer clic fuera del contenido
-    closeLightbox();
-  });
-
-  lightboxMedia.addEventListener("click", function (event) {
-    // Detener la propagación del clic dentro del lightboxMedia para evitar que cierre el lightbox
-    event.stopPropagation();
-  });
-
-  // Reproducir el video en silencio al pasar el cursor
-  sliderItems.forEach((item) => {
-    const video = item.querySelector("video");
-    if (video) {
-      item.addEventListener("mouseenter", function () {
-        video.volume = 0; // Establecer volumen en silencio
-        video.play();
-      });
-
-      item.addEventListener("mouseleave", function () {
-        video.pause();
-        video.currentTime = 0; // Reiniciar la reproducción al salir del cursor
-      });
-    }
-  });
-});
-
-//  --------------- carrusel -------------------
-
 //  --------------- Boton Whatsapp-------------------
 
 function openWhatsApp() {
@@ -396,3 +312,87 @@ function volver() {
     location.href = "http://127.0.0.1:";
   });
 }
+
+//  --------------- carrusel -------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderItems = document.querySelectorAll(".slider-item");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxTitle = document.getElementById("lightbox-title");
+  const lightboxDescription = document.getElementById("lightbox-description");
+  const lightboxMedia = document.getElementById("lightbox-media");
+  const closeBtn = document.getElementById("closeBtn");
+
+  sliderItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const type = item.getAttribute("data-type");
+      const title = item.getAttribute("data-title");
+      const description = item.getAttribute("data-description");
+      const mediaContent = item.innerHTML;
+
+      // lightboxTitle.innerHTML = title;
+      // lightboxDescription.innerHTML = description;
+
+      if (type === "video") {
+        lightboxMedia.innerHTML = mediaContent;
+        // Pausar el video si está reproduciéndose (para evitar duplicar la reproducción)
+        const video = lightboxMedia.querySelector("video");
+        if (video) {
+          video.pause();
+          video.currentTime = 0; // Reiniciar la reproducción al abrir el lightbox
+        }
+      } else {
+        lightboxMedia.innerHTML = `<img src="${
+          item.querySelector("img").src
+        }" alt="${title}">`;
+      }
+
+      lightbox.style.display = "block";
+    });
+  });
+
+  function closeLightbox() {
+    console.log("Cerrando lightbox");
+    lightbox.style.display = "none";
+    // Pausar el video si está reproduciéndose
+    const video = lightboxMedia.querySelector("video");
+    if (video) {
+      video.pause();
+    }
+  }
+  // Agrega un evento clic al botón de cierre
+  closeBtn.addEventListener("click", function () {
+    closeLightbox();
+  });
+
+  window.closeLightbox = closeLightbox;
+
+  lightbox.addEventListener("click", function () {
+    console.log("Haciendo clic en el lightbox");
+    // Cerrar lightbox al hacer clic fuera del contenido
+    closeLightbox();
+  });
+
+  lightboxMedia.addEventListener("click", function (event) {
+    // Detener la propagación del clic dentro del lightboxMedia para evitar que cierre el lightbox
+    event.stopPropagation();
+  });
+
+  // Reproducir el video en silencio al pasar el cursor
+  sliderItems.forEach((item) => {
+    const video = item.querySelector("video");
+    if (video) {
+      item.addEventListener("mouseenter", function () {
+        video.volume = 0; // Establecer volumen en silencio
+        video.play();
+      });
+
+      item.addEventListener("mouseleave", function () {
+        video.pause();
+        video.currentTime = 0; // Reiniciar la reproducción al salir del cursor
+      });
+    }
+  });
+});
+
+//  --------------- carrusel -------------------
+
