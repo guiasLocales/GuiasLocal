@@ -89,6 +89,9 @@ fourCards.addEventListener("click", (e) => {
 
   displayInfo.innerHTML = `
     <div class="contenedor_nosotros">
+    
+    <i class="fas fa-arrow-left" id='volver'></i>
+
     <div class="contenedor-titulo-nosotros">
         <div class="titulo-n">
             <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
@@ -196,6 +199,7 @@ function cargarContenido(targetId) {
   if (targetId === "nosotros") {
     holaInfo.innerHTML = `
         <div class="contenedor_nosotros">
+        <i class="fas fa-arrow-left" id='volver'></i>
         <div class="contenedor-titulo-nosotros">
             <div class="titulo-n">
                 <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
@@ -282,6 +286,7 @@ function cargarContenido(targetId) {
   if (targetId === "contacto") {
     holaInfo.innerHTML = `
         <div id="contenedor-formulario">
+        <i class="fas fa-arrow-left" id='volver'></i>
             <form action="#" method="post" class="formulario">
                 <h2 class="form-title">Formulario de Contacto</h2>
                 <h4 class="form-subtitle">Envía tu consulta y en el día te estaremos respuesta</h4>
@@ -313,7 +318,7 @@ function volver() {
 
   btnVolver.addEventListener("click", (e) => {
     e.preventDefault();
-    location.href = "http://127.0.0.1:";
+    window.location.href = "index.html";
   });
 }
 
