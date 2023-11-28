@@ -307,6 +307,7 @@ function cargarContenido(targetId) {
             </form>
         </div>
         `;
+        volver(); //funcion para el boton volver.`;
   }
 
   // Agregar más casos sea necesario para otras secciones
