@@ -24,6 +24,7 @@ function openWhatsApp() {
 // ---------------------------- Nuestro Portafolio ------------------------
 document.addEventListener("DOMContentLoaded", function () {
   var tarjetas = document.querySelectorAll(".tarjeta");
+  var indexCounter = 0;
 
   // Asocia un evento de clic a cada botón
   document
@@ -52,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para mostrar solo las tarjetas de una categoría
   function filtrarTarjetas(categoria) {
-    tarjetas.forEach(function (tarjeta) {
+    indexCounter = 0;
+    tarjetas.forEach(function (tarjeta, index) {
         var categoriasAtributo = tarjeta.getAttribute("data-categorias");
         if (categoriasAtributo) {
             var categorias = categoriasAtributo.split(" ");
@@ -62,12 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 tarjeta.classList.add("hidden");
             }
         }
+        tarjeta.style.order = index + 1;
     });
 }
 
   // Función para mostrar todas las tarjetas
   function mostrarTodasLasTarjetas() {
-    tarjetas.forEach(function (tarjeta) {
+    tarjetas.forEach(function (tarjeta, index) {
+      tarjeta.style.order = index + 1;
       tarjeta.style.display = "block";
       tarjeta.classList.remove("hidden");
     });
