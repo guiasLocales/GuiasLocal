@@ -97,7 +97,7 @@ fourCards.addEventListener("click", (e) => {
             </div>
             <div class="subtitulo-n">
                 <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
-                <h4> sitios web estratégicos y always-on dedicados.</h4>
+                <h4> sitios web estratégicos y analisis de datos.</h4>
             </div>
         </div>
     <div class="contenedor-secciones">
@@ -215,7 +215,7 @@ function cargarContenido(targetId) {
             </div>
             <div class="subtitulo-n">
                 <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
-                <h4> sitios web estratégicos y always-on dedicados.</h4>
+                <h4> sitios web estratégicos y analisis de datos.</h4>
             </div>
         </div>
         <div class="contenedor-secciones">
