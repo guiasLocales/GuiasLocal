@@ -91,33 +91,42 @@ fourCards.addEventListener("click", (e) => {
     <div class="contenedor_nosotros">
     
     <i class="fas fa-arrow-left" id='volver'></i>
-
     <div class="contenedor-titulo-nosotros">
-        <div class="titulo-n">
-            <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
+            <div class="titulo-n">
+                <h1><span class="fino">Hola! Somos </span><span class="bold">GUÍAS LOCALES</span></h1>
+            </div>
+            <div class="subtitulo-n">
+                <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
+                <h4> sitios web estratégicos y always-on dedicados.</h4>
+            </div>
         </div>
-        <div class="subtitulo-n">
-            <h4>Somos una agencia de publicidad digital. Desarrollamos planes de comunicación,</h4>
-            <h4> sitios web estratégicos y always-on dedicados.</h4>
+    <div class="contenedor-secciones">
+    <!-- Sección 1: Nuestra Historia -->
+    <div class="seccion-historia">
+        <img src="/img/nosotros/GUIAS-LOCALES-WEB.png" alt="Guias locales web">
+        <div class="texto-derecha">
+            <h3>Nuestra Misión</h3>
+            <p>En Guías Locales, nos enorgullece haber nacido en 2017 con la misión de ayudar a los comercios y empresas a mejorar sus ubicaciones y posicionamiento en Google Maps. Desde entonces, hemos logrado superar con éxito nuestros objetivos, brindando asistencia a más de 8000 comercios en todo el país. Sin embargo, nuestra historia no termina ahí. Escuchando las necesidades y deseos de nuestros valiosos clientes, decidimos expandir nuestros servicios para incluir también el apoyo en un marketing integral. Creemos firmemente en la importancia de adaptarnos y evolucionar junto con el mundo digital en constante cambio.</p>
         </div>
     </div>
-    <div class="contenedor-misionvision">
-        <div class="mision">
-                <h2>Misión</h2>
-                <p>
-                    Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
-                    El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
-                    Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
-                </p>
+
+    <!-- Sección 2: Nuestra Misión -->
+    <div class="seccion-mision">
+        <div class="texto-izquierda">
+            <h3>Nuestra Visión</h3>
+            <p>Nuestra visión es convertirnos en la empresa líder en marketing, ofreciendo soluciones integrales para todas las empresas que deseen contar con nuestro equipo. Nos esforzamos por brindar un servicio de la más alta calidad, colocando las relaciones internas y externas como nuestra máxima prioridad. En nuestro camino hacia el liderazgo, nos comprometemos a ser el socio confiable que necesitas para impulsar tu negocio. Nos enfocamos en comprender tus necesidades únicas y colaborar estrechamente contigo, formando parte de tu equipo.</p>
         </div>
-        <div class="vision">
-                <h2>Visión</h2>
-                <p>
-                    Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
-                    Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
-                    VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
-                </p>
-        </div>
+        <img src="/img/nosotros/Asset-24x-1536x1005.png" alt="Imagen 2">
+    </div>
+
+    <!-- Sección 3: Nuestros Valores -->
+    <div class="seccion-valores">
+          <img src="/img/nosotros/Asset-14x-2-2041x2048.png" alt="Imagen 3">
+          <div class="texto-derecha">
+              <h3>Nuestros Valores</h3>
+              <p>Lo que nos distingue es nuestra pasión por lo que hacemos. Guiados por nuestros valores fundamentales, nos entregamos de corazón en cada proyecto. Trabajamos con empeño para lograr resultados excepcionales y, lo más importante, formamos parte integral de tu negocio. Nuestro lema resume nuestra filosofía: ‘Formar parte de tu negocio’. Nos esforzamos por establecer una relación sólida y duradera contigo, comprendiendo tus necesidades y objetivos, para brindarte soluciones personalizadas y efectivas. Nos inspira la transparencia, la alegría en el trabajo y la mejora continua.</p>
+          </div>
+      </div>   
     </div>
     <div class="contenedor-somos">
         <div class="titulo-somos">
@@ -209,23 +218,33 @@ function cargarContenido(targetId) {
                 <h4> sitios web estratégicos y always-on dedicados.</h4>
             </div>
         </div>
-        <div class="contenedor-misionvision">
-            <div class="mision">
-                    <h2>Misión</h2>
-                    <p>
-                        Guías locales nació en el año 2017 con la iniciativa de ayudar a los comercios con las ubicaciones, y el posicionamiento en Google maps.
-                        El objetivo se superó con éxito, ayudando a más de 8000 comercios en todo el país.
-                        Es así que a pedido de nuestros clientes decidimos ayudar también con respecto a las redes sociales, manejando los mismos valores hacemos nuestro trabajo con el corazón, nuestro lema es formar parte de tu negocio, tu equipo de marketing y no solo una empresa que te maneja las redes.
-                    </p>
+        <div class="contenedor-secciones">
+        <!-- Sección 1: Nuestra Historia -->
+        <div class="seccion-historia">
+            <img src="/img/nosotros/GUIAS-LOCALES-WEB.png" alt="Guias locales web">
+            <div class="texto-derecha">
+                <h3>Nuestra Misión</h3>
+                <p>En Guías Locales, nos enorgullece haber nacido en 2017 con la misión de ayudar a los comercios y empresas a mejorar sus ubicaciones y posicionamiento en Google Maps. Desde entonces, hemos logrado superar con éxito nuestros objetivos, brindando asistencia a más de 8000 comercios en todo el país. Sin embargo, nuestra historia no termina ahí. Escuchando las necesidades y deseos de nuestros valiosos clientes, decidimos expandir nuestros servicios para incluir también el apoyo en un marketing integral. Creemos firmemente en la importancia de adaptarnos y evolucionar junto con el mundo digital en constante cambio.</p>
             </div>
-            <div class="vision">
-                    <h2>Visión</h2>
-                    <p>
-                        Nuestra visión es ser la empresa líder en marketing a Nivel nacional. Brindando un marketing integral a todas las empresas que deseen que nos sumemos a su equipo.
-                        Brindando un servicio con la mejor calidad posible y poniendo como prioridad las relaciones internas y externas.
-                        VALORES: nos inspira la transparencia, la alegría del trabajo, mejora continua, trabajo hacia la excelencia y la de construir relaciones duraderas.
-                    </p>
+        </div>
+    
+        <!-- Sección 2: Nuestra Misión -->
+        <div class="seccion-mision">
+            <div class="texto-izquierda">
+                <h3>Nuestra Visión</h3>
+                <p>Nuestra visión es convertirnos en la empresa líder en marketing, ofreciendo soluciones integrales para todas las empresas que deseen contar con nuestro equipo. Nos esforzamos por brindar un servicio de la más alta calidad, colocando las relaciones internas y externas como nuestra máxima prioridad. En nuestro camino hacia el liderazgo, nos comprometemos a ser el socio confiable que necesitas para impulsar tu negocio. Nos enfocamos en comprender tus necesidades únicas y colaborar estrechamente contigo, formando parte de tu equipo.</p>
             </div>
+            <img src="/img/nosotros/Asset-24x-1536x1005.png" alt="Imagen 2">
+        </div>
+    
+        <!-- Sección 3: Nuestros Valores -->
+        <div class="seccion-valores">
+            <img src="/img/nosotros/Asset-14x-2-2041x2048.png" alt="Imagen 3">
+            <div class="texto-derecha">
+                <h3>Nuestros Valores</h3>
+                <p>Lo que nos distingue es nuestra pasión por lo que hacemos. Guiados por nuestros valores fundamentales, nos entregamos de corazón en cada proyecto. Trabajamos con empeño para lograr resultados excepcionales y, lo más importante, formamos parte integral de tu negocio. Nuestro lema resume nuestra filosofía: ‘Formar parte de tu negocio’. Nos esforzamos por establecer una relación sólida y duradera contigo, comprendiendo tus necesidades y objetivos, para brindarte soluciones personalizadas y efectivas. Nos inspira la transparencia, la alegría en el trabajo y la mejora continua.</p>
+            </div>
+          </div>   
         </div>
         <div class="contenedor-somos">
             <div class="titulo-somos">

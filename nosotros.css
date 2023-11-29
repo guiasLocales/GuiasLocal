@@ -28,6 +28,10 @@
     color: #fff; /* Color del texto en hover */
 }
 
+
+
+/* ----------------------------------------- TITULO ------------------------------------------- */
+/* ----------------------------------------- MISION - VISION ------------------------------------------- */
 .contenedor-titulo-nosotros {
     text-align: center;
 }
@@ -57,45 +61,63 @@
     margin-top: 5px; /* Margen superior para separar el subtítulo del título */
     font-family: 'Open Sans', sans-serif;
 }
-
-/* ----------------------------------------- TITULO ------------------------------------------- */
-/* ----------------------------------------- MISION - VISION ------------------------------------------- */
-.contenedor-misionvision {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
+/* Contenedor principal */
+.contenedor-secciones {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 100px;
 }
 
-.mision, .vision {
-    width: 50%;
+/* Estilos para cada sección */
+.seccion-historia,
+.seccion-mision,
+.seccion-valores {
     display: flex;
-    flex-direction:column;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
-    background: linear-gradient(to top, #f2ede4, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
-.mision h2, .vision h2 {
-    color: #0367a6;
-    font-size: 5.3rem;
-    font-weight: 500;
-    text-align: center; /* Alineo el título al centro */
-    padding-bottom: 8px;
+
+/* Estilos para la imagen */
+.seccion-historia img,
+.seccion-mision img,
+.seccion-valores img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Estilos para el texto */
+.texto-derecha,
+.texto-izquierda {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Títulos */
+.texto-derecha h3,
+.texto-izquierda h3 {
+    color: #333;
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Párrafos */
+.texto-derecha p,
+.texto-izquierda p {
+    color: #313131;
+    line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
 }
 
-.mision p, .vision p {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding-bottom: 10px;
-    padding: 30px;
-}
 /* ----------------------------------------- MISION - VISION ------------------------------------------- */
 
 /* ----------------------------------------- MARKETING 360° ------------------------------------------- */
 .contenedor-somos {
-    background-color: #f2ede4;
+    background: linear-gradient(to top, #f2ede4, #FFFFFF); 
     text-align: center;
     padding: 40px; /* Espaciado interior para centrar el contenido */
 }
