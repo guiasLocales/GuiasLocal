@@ -76,15 +76,16 @@ header {
     position: absolute;
     background-color:  #0367A6 ; /* Color de fondo de la sublista */
     z-index: -1; /* Para que esté por encima de otros elementos */
-    margin: 0;
-    padding: 10px 20px;
+    margin: 2px;
+    padding: 15px 10px;
+    margin-left: -20px;
     
 }
 
 /* Estilo para los elementos de la sublista */
 .li-sublista {
     margin: 0;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 /* Estilo para los enlaces de la sublista */
@@ -815,10 +816,15 @@ footer{
 }
 
 /* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
-.li-footer:hover .ul-sublista-footer{
+.li-footer:hover .ul-sublista-footer {
     display: block;
     list-style: none;
     border-radius: 7px;
+}
+
+.ul-sublista-footer {
+    margin-left: -30px;
+
 }
 
 .a-sublistaf {

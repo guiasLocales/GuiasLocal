@@ -302,6 +302,84 @@ function cargarContenido(targetId) {
         `;
     volver(); //funcion para el boton volver.`;
   }
+  if (targetId === "gb") {
+    holaInfo.innerHTML = `
+    <i class="fas fa-arrow-left" id='volver'></i>
+    <div class="contenedor-gb">
+      <h1><span class="bold">Google Business</span></h1>
+        <!-- Sección 1: CATALOGO DE PRODUCTOS - PUBLICACIONES DIARIAS  -->
+        <div class="seccion-cp-pd">
+            <img src="/img/gmb/1 y 2.png" alt="Guias locales web">
+            <div class="texto-derecha">
+                <h3>CATALOGO DE PRODUCTOS</h3>
+                <p>Armamos el  catalogo de productos que mejor se adapte a tu perfil de negocio, para posicionar tu negocio orgánicamente.
+                </p>
+                <h3>PUBLICACIONES DIARIAS</h3>
+                <p>Replicamos en tu perfil de negocio tus posteos semanales de las redes sociales más utilizadas.                     
+                </p>
+            </div>
+        </div>
+    
+        <!-- Sección 2: CONTACTO - GESTION DE RESEÑAS -->
+        <div class="seccion-c-gr">
+            <div class="texto-izquierda">
+                <h3>CONTACTO</h3>
+                <p>Mantenemos tu perfil al día, incluida la actualizacion de los festivos.
+                   Agregamos un link de WhatsApp en cada una de las ubicaciones para mejorar el contacto con tus clientes y conectamos cada producto con el. 
+                </p>
+                <h3>GESTION DE RESEÑAS</h3>
+                <p>Gestionamos tus reseñas y ayudamos a que obtengas mas reseñas mediante acciones que van adecuadas a tu negocio como un QR, o link para Reseñas, etc..
+                </p>
+            </div>
+            <img src="/img/gmb/4 y 5.png" alt="Imagen 2">
+        </div>
+    
+        <!-- Sección 3: UBICACION OPTIMIZADA - ESTADISTICAS MENSUALES  -->
+        <div class="seccion-uo-em">
+            <img src="/img/gmb/5 y 6.png" alt="Imagen 3">
+            <div class="texto-derecha">
+                <h3>UBICACION OPTIMIZADA</h3>
+                <p>Mejoramos visualmente la ubicación con fotos de portada atractiva y en caso de una cambio relevante de tu negocio mantenemos las fotos actualizadas.</p>
+                <h3>ESTADISTICAS MENSUALES</h3>
+                <p>Resumimos las estadísticas de todas tus ubicaciones para que sean mucho mas sencillas de ver y asi poder tomar mejores decisiones en el futuro. En ella tomamos los datos mas 
+                    destacados de cada ubicación:
+                    <ul>
+                    <li>Alcance.</li>
+                    <li>Top palabras claves.</li>
+                    <li>Dispositivos Utilizados.</li>
+                    <li>Comparativa de interacciones.</li>
+                    <li>Gestion de reseñas.</li>
+                    <li>Puntos fuertes y débiles.</li>
+                    <li>Tableros Personalizados.</li>
+                    </ul>  
+                </p>
+            </div>
+        </div>
+        
+        <!-- Sección 4: OPCIONAL  -->
+        <div class="seccion-op">
+            <div class="texto-izquierda">
+                <h3>OPCIONAL</h3>
+                <p>Gestión presupuesto publicitario - anuncios smart.
+                    Gestionamos tus campañas publicitarias SMART. Que es un tipo de campaña sobre la ubicación de 
+                    Google Maps. Incluye: 
+                    <ul>
+                        <li>Estudio de Mercado.</li>
+                        <li>Estudio de palabras claves.</li>
+                        <li>Optimización de campñas.</li>
+                        <li>Comparativa de interacciones.</li>
+                        <li>Analisis de Datos.</li>
+                    </ul>       
+                </p>
+            </div>
+            <img src="/img/gmb/opcional.png" alt="Imagen 3">
+        </div>  
+    </div>
+    `;
+
+    volver(); //funcion para el boton volver.`;
+  }
+
   if (targetId === "contacto") {
     holaInfo.innerHTML = `
         <div id="contenedor-formulario">
