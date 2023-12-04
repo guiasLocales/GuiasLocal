@@ -139,7 +139,7 @@ header {
 
 .imagen-fondo {
     background-image: url('/img/iniciofinal1.gif');  /* Imagen de fondo header */
-    background-size: 100%; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-size: 100% 100%; /* Ajusta la imagen de fondo al tamaño del contenedor */
     height: 100vh;  /* Ajusta la altura del contenedor al 100% del alto de la pantalla */
     display: flex;  /* Ajusta el contenido del contenedor al centro */
     align-items: center; /* Ajusta el contenido del contenedor al centro */
@@ -366,7 +366,7 @@ header {
     justify-content: center;
     width: 100%;
     background-image: url('./img/img-tarjetas1.gif');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
 }
