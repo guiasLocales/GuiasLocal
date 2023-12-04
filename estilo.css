@@ -138,8 +138,8 @@ header {
 /* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
 
 .imagen-fondo {
-    background-image: url('./img/15caa100-2ca3-45bb-966f-9a866e450934.gif');  /* Imagen de fondo header */
-    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-image: url('/img/iniciofinal1.gif');  /* Imagen de fondo header */
+    background-size: 100%; /* Ajusta la imagen de fondo al tamaño del contenedor */
     height: 100vh;  /* Ajusta la altura del contenedor al 100% del alto de la pantalla */
     display: flex;  /* Ajusta el contenido del contenedor al centro */
     align-items: center; /* Ajusta el contenido del contenedor al centro */
@@ -365,7 +365,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-image: url('./img/img-tarjetas.gif');
+    background-image: url('./img/Diseño\ sin\ título.gif');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -720,7 +720,8 @@ header {
 .contenedor-footer {
     width: 100%;
     padding: 20px;
-    background-image: url('./img/15caa100-2ca3-45bb-966f-9a866e450934.gif');
+    background-image: url('./img/iniciofinal1.gif');
+    background-size: 120%;
 }
 
 .footer-contenido {
