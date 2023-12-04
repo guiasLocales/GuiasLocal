@@ -360,9 +360,11 @@ function cargarContenido(targetId) {
         <div class="seccion-op">
             <div class="texto-izquierda">
                 <h3>OPCIONAL</h3>
-                <p>Gestión presupuesto publicitario - anuncios smart.
-                    Gestionamos tus campañas publicitarias SMART. Que es un tipo de campaña sobre la ubicación de 
-                    Google Maps. Incluye: 
+                <p>Gestión presupuesto publicitario - anuncios smart.</p>
+                <p>Gestionamos tus campañas publicitarias SMART.</p> 
+                <p>Que es un tipo de campaña sobre la ubicación de 
+                    Google Maps.</p> 
+                    <p>Incluye: </p> 
                     <ul>
                         <li>Estudio de Mercado.</li>
                         <li>Estudio de palabras claves.</li>
@@ -370,7 +372,7 @@ function cargarContenido(targetId) {
                         <li>Comparativa de interacciones.</li>
                         <li>Analisis de Datos.</li>
                     </ul>       
-                </p>
+                
             </div>
             <img src="/img/gmb/opcional.png" alt="Imagen 3">
         </div>  

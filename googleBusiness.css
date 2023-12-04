@@ -1,13 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-gb {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
     background: linear-gradient(to top, #f1f1f1, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
@@ -23,10 +19,7 @@
 .seccion-c-gr,
 .seccion-uo-em,
 .seccion-op {
-    width: 80%;
-    margin-bottom: 60px;
-    margin-top: 40px;
-    margin-left: 230px;
+    width: 100%;
     overflow: hidden;
     background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
     padding-top: 20px;
@@ -36,11 +29,24 @@
 }
 
 /* Estilos para las imágenes */
-.seccion-cp-pd img,
-.seccion-c-gr img,
+.seccion-cp-pd img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 100px;
+}
+.seccion-c-gr img {
+    max-width: 100%;
+    height: auto;
+}
 .seccion-uo-em img {
     max-width: 100%;
     height: auto;
+}
+
+.seccion-op img {
+    float: right;
+    width: 43%;
+    margin-right: 30px;
 }
 
 /* Estilos para el texto */
@@ -52,6 +58,7 @@
     margin-top: 30px;
     font-weight: bold;
     font-size: 2rem;
+    padding-left: 10px;
 }
 
 .seccion-cp-pd p,
@@ -60,6 +67,7 @@
 .seccion-op p {
     color: #666;
     line-height: 1.6;
+    padding-left: 10px;
 }
 
 .seccion-cp-pd li,
@@ -69,6 +77,7 @@
     color: #666;
     line-height: 1.6;
     list-style: none;
+    padding-left: 10px;
 }
 
 /* Estilos para el diseño de dos columnas */
@@ -81,7 +90,4 @@
     width: 50%;
 }
 
-.seccion-op img {
-    float: left;
-    width: 50%;
-}
+
