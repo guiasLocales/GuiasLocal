@@ -71,6 +71,7 @@
 .seccion-op p {
     color: #666;
     line-height: 1.6;
+    font-size: 1.2rem;
     padding-left: 10px;
 }
 
@@ -82,6 +83,7 @@
     line-height: 1.6;
     list-style: none;
     padding-left: 10px;
+    font-size: 1.2rem;
 }
 
 /* Estilos para el diseño de dos columnas */
