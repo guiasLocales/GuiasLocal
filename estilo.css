@@ -32,37 +32,42 @@ header {
     z-index: 1; /* Para que el encabezado esté por encima de la imagen de fondo */
 }
 
-.logo {
-    margin-left: 4%; /*Margen izquierdo para el logo*/
-}
-
 .nav-header {
     width: 45%;
     margin-right:5%; /* Margen derecho para el menú */
 }
 
-.ul-header {
-    list-style: none;
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
-    padding: 0;
-    margin: 0;
+.logo-header{
+    margin-left: 5%; /* Margen izquierdo para el logo */
 }
 
 .li-header {
     flex: 1; /* Distribuye el espacio de manera igual entre los elementos */
     text-align: center; /* Alinea el texto en el centro de cada elemento */
+    margin: 0 5px; /* Margen horizontal entre elementos del menú */
+    padding: 10px 20px; /* Espacio alrededor del texto del enlace */
 }
 
-.a-header {
-    display: block;
+.ul-header {
+    list-style: none; /* Quita las viñetas de la lista */
+    display: flex; /* Para que los elementos de la lista se muestren en línea */
+    background-color: rgb(235, 96, 99); /* Color de fondo del menú */
+    border-bottom-left-radius: 15px; /* Borde redondeado izquierdo */
+    border-top-left-radius: 15px; /* Borde redondeado derecho */
+    border-bottom-right-radius: 15px; /* Borde redondeado derecho */
+    border-top-right-radius: 15px; /* Borde redondeado derecho */
+}
+
+.a-header{
     padding: 5px 0px;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 550;
-    transition: inherit;
-    white-space: nowrap;
+    display: block; /* Convierte el enlace en un elemento de bloque */
+    color: #FFFFFF; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-decoration: none; /* Quita la decoración de texto (subrayado) */
+    transition: inherit; /* Agrega una transición para suavizar el cambio de color */
+    white-space: nowrap; /* Evita que el texto se desborde */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .a-header:hover {
@@ -92,7 +97,10 @@ header {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+}
 
+.a-sublista:hover {
+    color:  rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
 }
 
 /* Mostrar la sublista cuando se pasa el puntero sobre "Soluciones" */
@@ -103,36 +111,6 @@ header {
 }
 
 /* ----------------------------------------- fin lista desplegable ------------------------------------------- */
-
-.ul-header {
-    list-style: none; /* Quita las viñetas de la lista */
-    display: flex; /* Para que los elementos de la lista se muestren en línea */
-    justify-content: center; /* Para alinear elementos en el centro */
-    background-color: rgb(235, 96, 99); /* Color de fondo del menú */
-    border-bottom-left-radius: 15px; /* Borde redondeado izquierdo */
-    border-top-left-radius: 15px; /* Borde redondeado derecho */
-    border-bottom-right-radius: 15px; /* Borde redondeado derecho */
-    border-top-right-radius: 15px; /* Borde redondeado derecho */
-}
-
-.li-header {
-    margin: 0 5px; /* Margen horizontal entre elementos del menú */
-    padding: 10px 20px; /* Espacio alrededor del texto del enlace */
-}
-.a-header{
-    display: block; /* Convierte el enlace en un elemento de bloque */
-    color: #FFFFFF; /* Color del texto */
-    font-size: 15px; /* Tamaño de la fuente */
-    text-decoration: none; /* Quita la decoración de texto (subrayado) */
-    transition: inherit; /* Agrega una transición para suavizar el cambio de color */
-    white-space: nowrap; /* Evita que el texto se desborde */
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-.a-header:hover {
-    color: rgb(236, 232, 223); /* Cambia el color del texto en estado de hover */
-}
 
 /* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
 
@@ -153,7 +131,7 @@ header {
 }
 
 /* ------------------ IMG FONDO Y FRASE PRINCIPLA ---------------------------*/
-/* ----------------------------------------- HEADER ------------------------------------------- */
+/* ----------------------------------------- FIN HEADER ------------------------------------------- */
 
 /* ----------------------------------------- FRASE ------------------------------------------- */
 .contenedor-frase {
@@ -167,7 +145,6 @@ header {
     color: #939393; /* Color del texto */
     font-size: 3.2rem; /* Ajusta el tamaño de fuente */
     font-weight:bold; /* Ajusta el grosor de la fuente */
-    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-frase .color-especial {
@@ -186,14 +163,12 @@ header {
     color: #FF0000; /* Color del texto */
     font-size: 3.2rem; /* Ajusta el tamaño de fuente */
     font-weight:bold; /* Ajusta el grosor de la fuente */
-    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-filosofia p {
     color: #000000; /* Color del texto para las frases */
     font-size: 1.2rem; /* Tamaño de fuente para las frases */
     line-height: 1.6; /* Espaciado entre líneas */
-    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-filosofia strong {
@@ -229,14 +204,12 @@ header {
     font-size: 1.7rem;
     margin-top: 20px;
     color: #000000; /* Color del texto para las frases */
-    font-family: 'Open Sans', sans-serif;
 }
 
 .tarjeta p {
     font-size: 1rem;
     margin-top: 5px;
     color: #000000; /* Color del texto para las frases */
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* ----------------------------------------- TARJETAS ------------------------------------------- */
@@ -256,7 +229,6 @@ header {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, cursor 0.3s;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .boton-conocer:hover {
@@ -280,8 +252,6 @@ header {
     text-align: center; /* Alinea el texto al centro */
     font-size: 3rem; /* Tamaño de fuente más grande */
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
-    
 }
 
 .gris {
@@ -318,13 +288,11 @@ header {
 /* Estilo específico para el texto dentro de tarjetas azules */
 .tarjeta-s.azul p {
     color: #fff; /* Color de texto blanco para los párrafos dentro de tarjetas azules */
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* Estilo específico para el texto dentro de tarjetas grises */
 .tarjeta-s.gris p {
     color: #3f3e3e; /* Color de texto gris para los párrafos dentro de tarjetas grises */
-    font-family: 'Open Sans', sans-serif;
 }
 
 .titulo-tarjetas {
@@ -334,7 +302,6 @@ header {
 /* Configura el título y el párrafo para ocupar el 40% del ancho cada uno */
 .tarjeta-s h2 {
     font-size: 1.4rem;
-    font-family: 'Open Sans', sans-serif;
     text-align: left;
     width: 70%;
     font-size: 50px;
@@ -399,7 +366,6 @@ header {
     text-align: center;
     font-size: 3rem; /* Tamaño de fuente más grande */
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
     
 }
 
