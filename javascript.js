@@ -24,7 +24,6 @@ function openWhatsApp() {
 // ---------------------------- Nuestro Portafolio ------------------------
 document.addEventListener("DOMContentLoaded", function () {
   var tarjetas = document.querySelectorAll(".tarjeta");
-  var indexCounter = 0;
 
   // Asocia un evento de clic a cada botón
   document
@@ -204,7 +203,7 @@ function cargarContenido(targetId) {
   // Implementa la lógica para cargar el contenido según el ID
   // Se Puedes utilizar un objeto o un switch para determinar qué contenido cargar
 
-  // Ejemplo de contenido para la sección "Nosotros"
+  // Contenido para la sección "Nosotros"
   if (targetId === "nosotros") {
     holaInfo.innerHTML = `
         <div class="contenedor_nosotros">
@@ -383,30 +382,6 @@ function cargarContenido(targetId) {
   }
 
   if (targetId === "contacto") {
-    // holaInfo.innerHTML = `
-    //     <div id="contenedor-formulario">
-    //     <i class="fas fa-arrow-left" id='volver'></i>
-    //         <form action="#" method="post" class="formulario">
-    //             <h2 class="form-title">Formulario de Contacto</h2>
-    //             <h4 class="form-subtitle">Envía tu consulta y en el día te estaremos respuesta</h4>
-
-    //             <label for="nombre" class="form-label">Nombre</label>
-    //             <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre" required>
-
-    //             <label for="apellido" class="form-label">Apellido</label>
-    //             <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Apellido" required>
-
-    //             <label for="email" class="form-label">Email</label>
-    //             <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
-
-    //             <label for="consulta" class="form-label">Escribe tu consulta</label>
-    //             <textarea id="consulta" name="consulta" class="form-textarea" rows="4" placeholder="Escribe tu consulta" required></textarea>
-
-    //             <input type="submit" value="Enviar" class="form-submit">
-    //         </form>
-    //     </div>
-    //     `;
-    //     volver(); //funcion para el boton volver.`;
     // ---------------- DESPLAZAMIENTO CONTACTO ----------------
     var targetElement = document.getElementById(targetId);
     var targetOffset = targetElement.offsetTop;
