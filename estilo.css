@@ -318,10 +318,10 @@ header {
     padding-bottom: 40px;
 }
 
-/* Configura la imagen para ocupar el 60% del ancho disponible */
+/* Configura la imagen para ocupar el 30% del ancho disponible */
 .tarjeta-s img {
     margin-left: 7%;
-    width: 30%;
+    max-width: 30%;
     padding: 20px;
 }
 
@@ -442,7 +442,7 @@ header {
 }
 
 .imagen-portfolio img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     transition: transform 0.5s;
     display: block;
@@ -489,7 +489,7 @@ header {
 }
 
 .imagen-clientes img {
-    width: 75%;
+    max-width: 75%;
     height: 75%;
 }
 
@@ -601,17 +601,17 @@ header {
 }
 
 .imagen-creador img {
-    width: 200px;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover; /* Esto ajusta la imagen manteniendo las proporciones */
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 
 .imagen-creador i {
-    font-size: 36px;
+    font-size: 34px;
     color: #e91010;
     position: absolute;
     top: 0;
@@ -670,7 +670,7 @@ header {
 }
 
 .whatsapp-button img {
-    width: 50px;
+    max-width: 50px;
     height: 50px;
 }
 
