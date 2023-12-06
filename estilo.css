@@ -76,8 +76,7 @@ header {
     background-color:  #0367A6 ; /* Color de fondo de la sublista */
     z-index: -1; /* Para que esté por encima de otros elementos */
     margin: 2px;
-    padding: 15px 10px;
-    margin-left: -20px;
+    padding: 15px 10px; 
     
 }
 

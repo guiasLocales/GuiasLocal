@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./estilo.css">
     <link rel="stylesheet" href="./nosotros.css">
-    <link rel="stylesheet" href="./contacto.css">
+    <!-- <link rel="stylesheet" href="./contacto.css"> -->
     <link rel="stylesheet" href="./googleBusiness.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -498,7 +498,7 @@
     </div>
         <!-- ----------------------------------- FOOTER ------------------------------------------ -->
         <hr class="footerhr">
-        <div class="contenedor-footer">
+        <div class="contenedor-footer" id="contacto">
             <footer>
                 <div class="footer-contenido">
                     <div class="footer-logo">
@@ -561,3 +561,25 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtén el enlace
+        var enlaceContacto = document.querySelector('.a-header');
+
+        // Añade un listener para el clic
+        enlaceContacto.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+            // Obtiene el destino del enlace (usando el atributo href)
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            // Desplázate suavemente hacia el elemento
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>

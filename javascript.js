@@ -55,18 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
   function filtrarTarjetas(categoria) {
     indexCounter = 0;
     tarjetas.forEach(function (tarjeta, index) {
-        var categoriasAtributo = tarjeta.getAttribute("data-categorias");
-        if (categoriasAtributo) {
-            var categorias = categoriasAtributo.split(" ");
-            if (categorias.includes(categoria) || categoria === "todas") {
-                tarjeta.classList.remove("hidden");
-            } else {
-                tarjeta.classList.add("hidden");
-            }
+      var categoriasAtributo = tarjeta.getAttribute("data-categorias");
+      if (categoriasAtributo) {
+        var categorias = categoriasAtributo.split(" ");
+        if (categorias.includes(categoria) || categoria === "todas") {
+          tarjeta.classList.remove("hidden");
+        } else {
+          tarjeta.classList.add("hidden");
         }
-        tarjeta.style.order = index + 1;
+      }
+      tarjeta.style.order = index + 1;
     });
-}
+  }
 
   // Función para mostrar todas las tarjetas
   function mostrarTodasLasTarjetas() {
@@ -383,30 +383,55 @@ function cargarContenido(targetId) {
   }
 
   if (targetId === "contacto") {
-    holaInfo.innerHTML = `
-        <div id="contenedor-formulario">
-        <i class="fas fa-arrow-left" id='volver'></i>
-            <form action="#" method="post" class="formulario">
-                <h2 class="form-title">Formulario de Contacto</h2>
-                <h4 class="form-subtitle">Envía tu consulta y en el día te estaremos respuesta</h4>
-    
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre" required>
-    
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Apellido" required>
-    
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
-    
-                <label for="consulta" class="form-label">Escribe tu consulta</label>
-                <textarea id="consulta" name="consulta" class="form-textarea" rows="4" placeholder="Escribe tu consulta" required></textarea>
-    
-                <input type="submit" value="Enviar" class="form-submit">
-            </form>
-        </div>
-        `;
-        volver(); //funcion para el boton volver.`;
+    // holaInfo.innerHTML = `
+    //     <div id="contenedor-formulario">
+    //     <i class="fas fa-arrow-left" id='volver'></i>
+    //         <form action="#" method="post" class="formulario">
+    //             <h2 class="form-title">Formulario de Contacto</h2>
+    //             <h4 class="form-subtitle">Envía tu consulta y en el día te estaremos respuesta</h4>
+
+    //             <label for="nombre" class="form-label">Nombre</label>
+    //             <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre" required>
+
+    //             <label for="apellido" class="form-label">Apellido</label>
+    //             <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Apellido" required>
+
+    //             <label for="email" class="form-label">Email</label>
+    //             <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+
+    //             <label for="consulta" class="form-label">Escribe tu consulta</label>
+    //             <textarea id="consulta" name="consulta" class="form-textarea" rows="4" placeholder="Escribe tu consulta" required></textarea>
+
+    //             <input type="submit" value="Enviar" class="form-submit">
+    //         </form>
+    //     </div>
+    //     `;
+    //     volver(); //funcion para el boton volver.`;
+    // ---------------- DESPLAZAMIENTO CONTACTO ----------------
+    var targetElement = document.getElementById(targetId);
+    var targetOffset = targetElement.offsetTop;
+    var currentPosition = window.scrollY;
+    var distance = targetOffset - currentPosition;
+    var startTime = null;
+
+    function smoothScroll(timestamp) {
+      if (!startTime) {
+        startTime = timestamp;
+      }
+
+      var progress = timestamp - startTime;
+      var easeInOutQuad = progress < duration ? progress / duration : 1;
+
+      window.scrollTo(0, currentPosition + easeInOutQuad * distance);
+
+      if (progress < duration) {
+        requestAnimationFrame(smoothScroll);
+      }
+    }
+
+    var duration = 1000; // Duración del desplazamiento en milisegundos
+    requestAnimationFrame(smoothScroll);
+
   }
 
   // Agregar más casos sea necesario para otras secciones
@@ -450,9 +475,8 @@ document.addEventListener("DOMContentLoaded", function () {
           video.currentTime = 0; // Reiniciar la reproducción al abrir el lightbox
         }
       } else {
-        lightboxMedia.innerHTML = `<img src="${
-          item.querySelector("img").src
-        }" alt="${title}">`;
+        lightboxMedia.innerHTML = `<img src="${item.querySelector("img").src
+          }" alt="${title}">`;
       }
 
       lightbox.style.display = "block";
