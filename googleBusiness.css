@@ -5,7 +5,8 @@
 .contenedor-gb {
     width: 100%;
     padding: 10px;
-    background: linear-gradient(to top, #f1f1f1, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    background: linear-gradient(to top, #f1f1f1, #FFFFFF);
+    /* Agrega un degradado de color de arriba hacia abajo */
 }
 
 .contenedor-gb h1 {
@@ -91,7 +92,67 @@
     float: right;
     width: 50%;
 }
+
 .texto-izquierda {
     float: left;
     width: 50%;
+}
+
+@media screen and (max-width: 762px) {
+    .contenedor-gb {
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .seccion-cp-pd,
+    .seccion-c-gr,
+    .seccion-uo-em,
+    .seccion-op {
+
+    }
+
+    .seccion-cp-pd h3,
+    .seccion-c-gr h3,
+    .seccion-uo-em h3,
+    .seccion-op h3 {
+        font-size: 1rem;
+
+    }
+
+    .seccion-cp-pd p,
+    .seccion-c-gr p,
+    .seccion-uo-em p,
+    .seccion-op p {
+        font-size: .6rem;
+
+    }
+
+    .seccion-cp-pd li,
+    .seccion-c-gr li,
+    .seccion-uo-em li,
+    .seccion-op li {
+        font-size: .6rem;
+        margin-left: -40px;
+    }
+
+    /* Estilos para las imágenes */
+.seccion-cp-pd img {
+    max-width: 50%;
+    height: auto;
+    margin-left: -1px;
+}
+.seccion-c-gr img {
+    max-width: 50%;
+    height: auto;
+}
+.seccion-uo-em img {
+    max-width: 50%;
+    height: auto;
+}
+
+.seccion-op img {
+    float: right;
+    width: 43%;
+}
+
 }
