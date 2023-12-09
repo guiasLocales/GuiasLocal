@@ -869,7 +869,7 @@ footer{
 /* ----------------------------------------- FOOTER ------------------------------------------- */
 
 /* ----------------------------------------- MEDIA QUERIES ------------------------------------------- */
-@media screen and (max-width: 742px) {
+@media screen and (max-width: 762px) {
 
     .contenedor {
         padding-left: 0; /* Elimina el espacio izquierdo del contenedor */
@@ -908,9 +908,10 @@ footer{
 
     /* Ajustes para la sublista desplegable */
     .ul-sublista {
-        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
-        top: 100%; /* Posiciona la sublista debajo del elemento padre */
-        left: 0; /* Alinea la sublista a la izquierda */
+        width: 30%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        left: 20%; /* Alinea la sublista a la izquierda */
+        z-index: 1;
+        text-align: center;
     }
 
     .li-sublista {
