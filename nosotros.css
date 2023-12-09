@@ -232,3 +232,87 @@
 }
 
 /* ----------------------------------------- RESUMEN NOSOTROS ------------------------------------------- */
+
+
+@media screen and (max-width: 762px) {
+    .contenedor-secciones {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .titulo-n h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .subtitulo-n h4 {
+        font-size: 1rem;
+    }
+    
+    .seccion-historia,
+    .seccion-mision,
+    .seccion-valores {
+        flex-direction: column;
+    }
+    .seccion-historia img,
+    .seccion-mision img {
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        position:initial;
+    }
+
+    .seccion-valores img{ 
+        display: none;
+    }
+
+    .texto-derecha,
+    .texto-izquierda {
+        padding: 0;
+    }
+    .texto-derecha h3,
+    .texto-izquierda h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .texto-derecha p,
+    .texto-izquierda p {
+        font-size: .8rem;
+        text-align: center;
+        max-width: 100%;
+    }
+    .titulo-somos h1 {  
+        font-size: 2.3rem;
+    }
+    .subtitulo-somos p { 
+        font-size: 1.3rem;
+    }
+    .tarjetas-somos {
+        flex-direction: column;
+    }
+    .tarjetas-s {
+        width: 100%;
+        padding: 0;
+    }
+    .tarjetas-s h3 {
+        font-size: 1.2rem;
+    }
+    .tarjetas-s p {
+        font-size: 1rem;
+    }
+    .contenedor-resumen {
+        flex-direction: column;
+        padding: 50px;
+    }
+    .tarjeta-resumen {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .tarjeta-resumen .texto-secundario {
+        position: relative;
+        transform: translateY(0);
+    }
+    .tarjeta-resumen .flecha {
+        transform: translateY(0);
+    }
+}

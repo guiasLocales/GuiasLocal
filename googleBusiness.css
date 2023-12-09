@@ -104,12 +104,6 @@
         max-width: 90%;
     }
 
-    .seccion-cp-pd,
-    .seccion-c-gr,
-    .seccion-uo-em,
-    .seccion-op {
-
-    }
 
     .seccion-cp-pd h3,
     .seccion-c-gr h3,
@@ -136,23 +130,23 @@
     }
 
     /* Estilos para las imágenes */
-.seccion-cp-pd img {
-    max-width: 50%;
-    height: auto;
-    margin-left: -1px;
-}
-.seccion-c-gr img {
-    max-width: 50%;
-    height: auto;
-}
-.seccion-uo-em img {
-    max-width: 50%;
-    height: auto;
-}
+    .seccion-cp-pd img {
+        max-width: 50%;
+        height: auto;
+        margin-left: -1px;
+    }
+    .seccion-c-gr img {
+        max-width: 50%;
+        height: auto;
+    }
+    .seccion-uo-em img {
+        max-width: 50%;
+        height: auto;
+    }
 
-.seccion-op img {
-    float: right;
-    width: 43%;
-}
+    .seccion-op img {
+        float: right;
+        width: 43%;
+    }
 
 }
