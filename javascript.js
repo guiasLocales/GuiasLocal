@@ -386,7 +386,7 @@ function cargarContenido(targetId) {
     <i class="fas fa-arrow-left" id='volver'></i>
     <div class="contenedor-gb">
       <h1><span class="bold">Google Ads</span></h1>
-        <!-- Sección 1: CATALOGO DE PRODUCTOS - PUBLICACIONES DIARIAS  -->
+        <!-- Sección 1: PLANIFICACION  -->
         <div class="seccion-cp-pd">
             <img src="/img/google ads/planificacion.png" alt="Guias locales web">
             <div class="texto-derecha">
@@ -396,7 +396,7 @@ function cargarContenido(targetId) {
             </div>
         </div>
     
-        <!-- Sección 2: CONTACTO - GESTION DE RESEÑAS -->
+        <!-- Sección 2: SEGMENTACION Y PALABRA CLAVE -->
         <div class="seccion-c-gr">
             <div class="texto-izquierda">
                 <h3>SEGMENTACIÓN Y PALABRAS CLAVE</h3>
@@ -406,7 +406,7 @@ function cargarContenido(targetId) {
             <img src="/img/google ads/segmentacion.png" alt="Guias locales web">
         </div>
     
-        <!-- Sección 3: UBICACION OPTIMIZADA - ESTADISTICAS MENSUALES  -->
+        <!-- Sección 3: MEDICION Y SEGUIMIENTO  -->
         <div class="seccion-uo-em">
             <img src="/img/google ads/medicion.png" alt="Guias locales web">
             <div class="texto-derecha">
@@ -415,10 +415,10 @@ function cargarContenido(targetId) {
             </div>
         </div>
         
-        <!-- Sección 4: OPCIONAL  -->
+        <!-- Sección 4: OPTIMIZACION  -->
         <div class="seccion-op">
             <div class="texto-izquierda">
-                <h3>OPTIMIZACION CONTINUA</h3>
+                <h3>OPTIMIZACIÓN CONTINUA</h3>
                 <p>Esto puede implicar realizar pruebas A/B, ajustar pujas, mejorar los anuncios o realizar cambios en la segmentacion. Se va ajustando el presupuesto para realizar estas optimizaciones y mejorar el rendimineto de tus anuncios.</p>
             </div>
             <img src="/img/google ads/optimizacion.png" alt="Guias locales web">
