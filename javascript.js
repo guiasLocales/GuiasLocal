@@ -385,7 +385,7 @@ function cargarContenido(targetId) {
     holaInfo.innerHTML = `
     <i class="fas fa-arrow-left" id='volver'></i>
     <div class="contenedor-gb">
-      <h1><span class="bold">Google ads</span></h1>
+      <h1><span class="bold">Google Ads</span></h1>
         <!-- Sección 1: CATALOGO DE PRODUCTOS - PUBLICACIONES DIARIAS  -->
         <div class="seccion-cp-pd">
             <img src="/img/google ads/planificacion.png" alt="Guias locales web">
