@@ -34,17 +34,17 @@
 
 /* Estilos para las imágenes */
 .seccion-cp-pd img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-left: 100px;
 }
 .seccion-c-gr img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-left: 100px;
 }
 .seccion-uo-em img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
