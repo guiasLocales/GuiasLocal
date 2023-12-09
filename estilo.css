@@ -867,3 +867,274 @@ footer{
 }
 
 /* ----------------------------------------- FOOTER ------------------------------------------- */
+
+/* ----------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    .contenedor {
+        padding-left: 0; /* Elimina el espacio izquierdo del contenedor */
+        padding-right: 0; /* Elimina el espacio derecho del contenedor */
+        width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    }
+    /* Estilos para pantallas más pequeñas, como celulares */
+     /* Ajustes para el encabezado */
+     header {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        position: static; /* Elimina la posición fija en pantallas más pequeñas */
+    }
+
+    .nav-header {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        margin: 10px 0; /* Agrega margen superior e inferior */
+    }
+
+    .logo-header {
+        margin-left: 0; /* Elimina el margen izquierdo para el logo */
+    }
+
+    .ul-header {
+        border-radius: 0; /* Elimina el borde redondeado en pantallas más pequeñas */
+    }
+
+    .li-header {
+        padding: 10px; /* Ajusta el espacio en cada elemento del menú */
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin: 0; /* Elimina el margen horizontal */
+    }
+
+    .a-header {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para la sublista desplegable */
+    .ul-sublista {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        top: 100%; /* Posiciona la sublista debajo del elemento padre */
+        left: 0; /* Alinea la sublista a la izquierda */
+    }
+
+    .li-sublista {
+        padding: 10px; /* Ajusta el espacio en cada elemento de la sublista */
+    }
+
+    .a-sublista {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para la imagen de fondo y frase principal */
+    .imagen-fondo h1 {
+        font-size: 4rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para el contenedor de la frase */
+    .contenedor-frase {
+        padding: 30px; /* Ajusta el espacio alrededor del contenido del contenedor */
+    }
+
+    .contenedor-frase h2 {
+        font-size: 2rem; /* Ajusta el tamaño de fuente */
+    }
+
+     /* Ajustes para el contenedor de filosofía */
+     .contenedor-filosofia {
+        padding: 30px; /* Ajusta el espacio alrededor del contenido del contenedor */
+    }
+
+    .contenedor-filosofia h2 {
+        font-size: 2rem; /* Ajusta el tamaño de fuente */
+    }
+
+    .contenedor-filosofia p {
+        font-size: 1rem; /* Tamaño de fuente para las frases */
+    }
+
+    /* Ajustes para el contenedor de servicios */
+    .contenedor-servicios {
+        padding: 20px; /* Ajusta el espacio alrededor del contenido del contenedor */
+    }
+
+    .titulo-servicios {
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .tarjeta-s {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+
+    .tarjeta-s img {
+        margin-left: 0; /* Elimina el margen izquierdo para la imagen */
+        max-width: 100%; /* Ajusta la imagen al 100% del ancho disponible */
+    }
+
+    .titulo-tarjetas {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+
+    /* Configura el título y el párrafo para ocupar el 100% del ancho cada uno */
+    .tarjeta-s h2 {
+        width: 100%;
+        padding: 20px; /* Ajusta el espacio alrededor del título */
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .tarjeta-s p {
+        width: 100%;
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        line-height: 1.3;
+        padding-left: 0; /* Elimina el espacio izquierdo del párrafo */
+        padding-bottom: 20px; /* Ajusta el espacio inferior del párrafo */
+    }
+
+    /* Ajustes para la imagen de fondo de las tarjetas */
+    .tarjetas-servicios {
+        background-image: none; /* Elimina la imagen de fondo en pantallas más pequeñas */
+    }
+
+     /* Ajustes para el contenedor de portfolio */
+     .contenedor-portfolio {
+        padding: 20px; /* Ajusta el espacio alrededor del contenido del contenedor */
+    }
+
+    .titulo-portfolio {
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+    }
+
+    /* Ajustes para las tarjetas de portfolio */
+    .tarjeta {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+        margin-bottom: 20px; /* Ajusta según sea necesario */
+    }
+
+    /* Ajustes para los botones de navegación */
+    .botones-navegador-portfolio button {
+        margin: 10px; /* Ajusta según sea necesario */
+    }
+
+    /* Ajustes para las imágenes de portfolio */
+    .imagen-portfolio img {
+        max-width: 100%; /* Ajusta la imagen al 100% del ancho disponible */
+    }
+
+    /* Ajustes para la descripción de portfolio */
+    .descripcion {
+        padding: 20px; /* Ajusta el espacio alrededor del contenido de la descripción */
+    }
+
+    .swiffy-slider {
+        height: 200px; /* Ajusta la altura del contenedor del carrusel */
+        margin-bottom: 3%; /* Ajusta el margen inferior del carrusel */
+        margin-top: 5%; /* Ajusta el margen superior del carrusel */
+    }
+
+    .slider-container {
+        height: 200px; /* Ajusta la altura del contenedor de las imágenes */
+    }
+
+    .slider-container li {
+        flex: 0 0 100%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor */
+        margin-right: 0; /* Elimina el margen derecho entre las imágenes */
+    }
+
+    .slider-container video {
+        border-radius: 8px; /* Ajusta el radio de la esquina de los videos */
+        transition: transform 0.3s ease; /* Ajusta la transición al hacer hover en el video */
+    }
+
+    .content-lightbox {
+        padding: 20px; /* Ajusta el espacio alrededor del contenido del lightbox */
+    }
+
+    #lightbox-media video {
+        height: 60vh; /* Ajusta la altura de los videos en el lightbox */
+    }
+
+    .contenedor-creadores {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .tarjeta-creador {
+        width: 80%; /* Ocupa el 80% del ancho en pantallas más pequeñas */
+        margin: 20px auto; /* Centra las tarjetas */
+    }
+
+    .imagen-creador {
+        height: 120px; /* Ajusta la altura de la imagen en pantallas más pequeñas */
+    }
+
+    .imagen-creador img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nombre-creador h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente del nombre del creador */
+        margin: 10px 0; /* Ajusta el margen del nombre del creador */
+    }
+
+    .estrellas {
+        margin-top: 5px; /* Ajusta el margen superior de las estrellas */
+        margin-bottom: 5px; /* Ajusta el margen inferior de las estrellas */
+    }
+
+    .nombre-creador p {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente del párrafo del creador */
+        margin: 5px 0; /* Ajusta el margen del párrafo del creador */
+    }
+
+    .whatsapp-body {
+        justify-content: flex-end; /* Alinea el contenido al final en pantallas más pequeñas */
+    }
+
+    .whatsapp-button {
+        bottom: 10px; /* Ajusta la posición inferior del botón */
+        right: 10px; /* Ajusta la posición derecha del botón */
+        padding: 8px; /* Ajusta el relleno del botón */
+    }
+
+    .whatsapp-button img {
+        max-width: 40px; /* Ajusta el ancho máximo de la imagen del botón */
+        height: 40px; /* Ajusta la altura de la imagen del botón */
+    }
+
+    .contenedor-footer {
+        background-image: none; /* Elimina la imagen de fondo en pantallas más pequeñas */
+        padding: 20px; /* Ajusta el relleno del contenedor en pantallas más pequeñas */
+    }
+
+    .footer-contenido {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección del footer a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .footer-redes-sociales ul {
+        margin-top: 20px; /* Ajusta el margen superior en pantallas más pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+        justify-content: center; /* Centra los elementos en el eje principal */
+        flex-direction: row; /* Cambia la dirección de la lista a fila en pantallas más pequeñas */
+    }
+
+    .nav-footer {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+        text-align: center; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .ul-sublista-footer {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    }
+
+    .footer-consulta {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+
+    #formulario input[type="submit"] {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+  }
