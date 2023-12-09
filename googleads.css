@@ -74,6 +74,7 @@
     line-height: 1.6;
     font-size: 1.2rem;
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .seccion-cp-pd li,
@@ -96,5 +97,98 @@
     float: left;
     width: 50%;
 }
+
+.imgads {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#left-column {
+    background-color: #0074e5; /* Celeste azulado */
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    transform: rotate(180deg);
+}
+
+#left-column h2 {
+    transform: rotate(90deg);
+    color: #FFFFFF;
+    font-size: 4.8rem;
+    font-weight: bold;
+    padding: 50px;
+}
+
+#upper-right-title {
+    text-align: right;
+    padding: 20px;
+    width: 20%;
+    margin-right: 50px;
+}
+
+#duck-mouth {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 20px solid #808080; /* Gris */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#google-text {
+    font-weight: bold;
+    display: inline-block;
+    color: #808080; /* Gris */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#ads-text {
+    display: inline-block;
+    color: #808080; /* Gris */
+    font-size: 18px;
+    margin-left: -7px;
+}
+
+#content-objetivos {
+    flex-grow: 1;
+    margin-top: 30px;
+}
+
+#content-objetivos p {
+    margin-left: 110px;
+    text-align: left;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 1.rem;
+}
+
+#content-objetivos ul {
+    margin-top: 40px;
+    margin-left: 110px;
+    list-style: none;
+}
+
+#content-objetivos li {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.color-circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.gray { background-color: #808080; }
+.red { background-color: #FF0000; }
+.yellow { background-color: #ffb404; }
+.green { background-color: #008000; }
+.blue { background-color: #0000FF; }
+
 
 

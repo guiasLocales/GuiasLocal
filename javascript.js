@@ -424,6 +424,26 @@ function cargarContenido(targetId) {
             <img src="/img/google ads/optimizacion.png" alt="Guias locales web">
         </div>  
     </div>
+    <div class="imgads">
+        <div id="left-column">
+            <h2> Objetivo</h2>
+        </div>
+        <div id="content-objetivos">
+            <p>El objetivo principal de las campañas de Red de Búsqueda de Google Ads es mostrar anuncios relevantes a los usuarios que realizan búsquedas en Google. Estas campañas buscan lograr lo siguiente:</p>
+            <ul>
+                <li><span class="color-circle gray"></span> Aumentar la visibilidad de la empresa, productos o servicios.</li>
+                <li><span class="color-circle red"></span> Generar tráfico cualificado hacia el sitio web.</li>
+                <li><span class="color-circle yellow"></span> Incrementar las conversiones, como ventas o registros de clientes potenciales.</li>
+                <li><span class="color-circle green"></span> Mejorar el retorno de inversión (ROI) al maximizar los resultados con el presupuesto establecido.</li>
+                <li><span class="color-circle blue"></span> Obtener información sobre el comportamiento de los usuarios y las tendencias del mercado.</li>
+            </ul>
+        </div>
+        <div id="upper-right-title">
+            <div id="duck-mouth"></div>
+            <div id="google-text">Google</div>
+            <div id="ads-text">Ads</div>
+        </div>
+    </div>
     `;
 
     volver(); //funcion para el boton volver.`;
