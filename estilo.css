@@ -869,7 +869,7 @@ footer{
 /* ----------------------------------------- FOOTER ------------------------------------------- */
 
 /* ----------------------------------------- MEDIA QUERIES ------------------------------------------- */
-@media screen and (max-width: 442px) {
+@media screen and (max-width: 742px) {
 
     .contenedor {
         padding-left: 0; /* Elimina el espacio izquierdo del contenedor */
