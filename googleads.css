@@ -1,0 +1,99 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor-gb {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, #f1f1f1, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+}
+
+.contenedor-gb h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+/* Estilos para las secciones */
+.seccion-cp-pd,
+.seccion-c-gr,
+.seccion-uo-em,
+.seccion-op {
+    width: 100%;
+    padding: 100px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    position: sticky; /* Tarjeta 1 se queda fija */
+    top: 0;
+}
+
+/* Estilos para las imágenes */
+.seccion-cp-pd img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 100px;
+}
+.seccion-c-gr img {
+    max-width: 100%;
+    height: auto;
+}
+.seccion-uo-em img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seccion-op img {
+    float: right;
+    width: 43%;
+    margin-right: 30px;
+}
+
+/* Estilos para el texto */
+.seccion-cp-pd h3,
+.seccion-c-gr h3,
+.seccion-uo-em h3,
+.seccion-op h3 {
+    color: #333;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 2.8rem;
+    padding-left: 10px;
+}
+
+.seccion-cp-pd p,
+.seccion-c-gr p,
+.seccion-uo-em p,
+.seccion-op p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.seccion-cp-pd li,
+.seccion-c-gr li,
+.seccion-uo-em li,
+.seccion-op li {
+    color: #666;
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Estilos para el diseño de dos columnas */
+.texto-derecha {
+    float: right;
+    width: 50%;
+}
+.texto-izquierda {
+    float: left;
+    width: 50%;
+}
+
+

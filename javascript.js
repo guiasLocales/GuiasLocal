@@ -381,6 +381,55 @@ function cargarContenido(targetId) {
     volver(); //funcion para el boton volver.`;
   }
 
+  if (targetId === "ga") {
+    holaInfo.innerHTML = `
+    <i class="fas fa-arrow-left" id='volver'></i>
+    <div class="contenedor-gb">
+      <h1><span class="bold">Google ads</span></h1>
+        <!-- Sección 1: CATALOGO DE PRODUCTOS - PUBLICACIONES DIARIAS  -->
+        <div class="seccion-cp-pd">
+            <img src="/img/google ads/planificacion.png" alt="Guias locales web">
+            <div class="texto-derecha">
+                <h3>PLANIFICACIÓN</h3>
+                <p>Esto Incluye el estudio del mercado y el analisis de la competencia, en base a esto se diseña la estrategia y el armado de las campañas.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Sección 2: CONTACTO - GESTION DE RESEÑAS -->
+        <div class="seccion-c-gr">
+            <div class="texto-izquierda">
+                <h3>SEGMENTACIÓN Y PALABRAS CLAVE</h3>
+                <p>Esto incluye seleccionar ubicaciones geograficas especificas, idiomas, dispositivos y palabras clave relevantes. Determina que palabras clave son mas valiosas para tu negocio y asigna una parte del presupuesto para pujar por ellas.
+                </p>
+            </div>
+            <img src="/img/google ads/segmentacion.png" alt="Guias locales web">
+        </div>
+    
+        <!-- Sección 3: UBICACION OPTIMIZADA - ESTADISTICAS MENSUALES  -->
+        <div class="seccion-uo-em">
+            <img src="/img/google ads/medicion.png" alt="Guias locales web">
+            <div class="texto-derecha">
+                <h3>MEDICION Y SEGUIMIENTO</h3>
+                <p>Esto te permitira medir el rendimiento de tus anuncios y realizar ajustes segun los datos obtenidos.</p>
+            </div>
+        </div>
+        
+        <!-- Sección 4: OPCIONAL  -->
+        <div class="seccion-op">
+            <div class="texto-izquierda">
+                <h3>OPTIMIZACION CONTINUA</h3>
+                <p>Esto puede implicar realizar pruebas A/B, ajustar pujas, mejorar los anuncios o realizar cambios en la segmentacion. Se va ajustando el presupuesto para realizar estas optimizaciones y mejorar el rendimineto de tus anuncios.</p>
+            </div>
+            <img src="/img/google ads/optimizacion.png" alt="Guias locales web">
+        </div>  
+    </div>
+    `;
+
+    volver(); //funcion para el boton volver.`;
+
+  }
+
   if (targetId === "contacto") {
     // ---------------- DESPLAZAMIENTO CONTACTO ----------------
     var targetElement = document.getElementById(targetId);
