@@ -430,6 +430,27 @@ function cargarContenido(targetId) {
 
   }
 
+  if (targetId === "ad") {
+    holaInfo.innerHTML = `
+      <i class="fas fa-arrow-left" id='volver'></i>
+      <div class="contenedor-titulo-datos">
+        <div class="titulo-n">
+            <h2><span class="fino">Analisis de datos </span></h2>
+        </div>
+        <div class="subtitulo-datos">
+            <h4>No solo nos apasiona el marketing estratégico, sino que también comprendemos la importancia de tomar decisiones fundamentadas en datos precisos. Nuestra sección de análisis de datos está diseñada para ofrecerte una visión profunda y perspicaz de tus campañas de marketing, proporcionando una base sólida para la toma de decisiones informadas.</h4>
+        </div>
+    </div>
+    <div class="panelDinamico">
+
+        <iframe width="95%" height="1000" src="https://lookerstudio.google.com/embed/reporting/20166079-1de5-4b2e-9e18-9ac7d47d914a/page/HYHRD" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+    `;
+
+    volver(); //funcion para el boton volver.`;
+  }
+
   if (targetId === "contacto") {
     // ---------------- DESPLAZAMIENTO CONTACTO ----------------
     var targetElement = document.getElementById(targetId);
