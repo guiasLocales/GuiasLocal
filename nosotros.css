@@ -240,6 +240,14 @@
         padding: 0;
     }
 
+    .contenedor-titulo-nosotros {
+        padding: 10px;
+    }
+
+    .contenedor_nosotros  {
+        margin-top: -230px;
+    }
+
     .titulo-n h1 {
         text-align: center;
         font-size: 2rem;
@@ -254,8 +262,7 @@
     .seccion-valores {
         flex-direction: column;
     }
-    .seccion-historia img,
-    .seccion-mision img {
+    .seccion-historia img {
         margin: 0;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -263,7 +270,8 @@
     }
 
     .seccion-valores img{ 
-        display: none;
+        /* display: none; */
+        order: 1;
     }
 
     .texto-derecha,
