@@ -303,8 +303,8 @@ function cargarContenido(targetId) {
   }
   if (targetId === "gb") {
     holaInfo.innerHTML = `
-    <i class="fas fa-arrow-left" id='volver'></i>
     <div class="contenedor-gb">
+    <i class="fas fa-arrow-left" id='volver'></i>
       <h1><span class="bold">Google Business</span></h1>
         <!-- Sección 1: CATALOGO DE PRODUCTOS - PUBLICACIONES DIARIAS  -->
         <div class="seccion-cp-pd">
