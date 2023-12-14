@@ -1,0 +1,112 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor-titulo-blog {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    margin-top: -30px;
+}
+
+
+.titulo-blog h1{
+    font-size: 4.5rem; /* Tamaño grande para el título */
+    font-weight: normal; /* Puedes ajustar el peso de la fuente según tus preferencias */
+}
+
+.locales {
+    font-weight: bold; /* Hace que el texto sea más grueso (negrita) */
+}
+
+.guias {
+    font-weight:500; /* Hace que "Hola! Somos" tenga letras más finas */
+}
+
+.subtitulo-blog h4 {
+    font-weight:bold;
+    font-size: 1.5rem; /* Tamaño grande para el subtítulo */
+    margin-top: 5px; /* Margen superior para separar el subtítulo del título */
+
+}
+/* ------------------- CONTENIDO 1 ------------------- */
+.contenido1 {
+   display: flex;
+   margin-top: 20px;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+.contenido1 ul {
+    padding-left: 390px;
+    list-style: none;
+
+}
+
+.contenido1 ul h2{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.contenido1 li {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+
+
+.sublista li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.sublista strong,
+.contenido1 ul strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.imgblog {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.imgblog img {
+    height: 230%;
+}
+
+/* ------------------- CONTENIDO 2 ------------------- */
+
+.contenedorBlog1 {
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.contenido2 {
+    margin: 3px;
+}
+
+.contenido2 h2 {
+    margin-bottom: 10px;
+}
+
+.contenido2 p {
+    font-weight: 500;
+}
+
+.imgblog1 img {
+    width: 550px;
+    height: 450px;
+    margin-right: 20px;
+}
+
+
