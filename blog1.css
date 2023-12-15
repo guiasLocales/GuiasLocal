@@ -10,34 +10,59 @@
     padding-right: 100px;
     padding-bottom: 100px;
     margin-top: -30px;
+    position: relative; /* Añadido para que los pseudo-elementos sean posicionados relativos a este contenedor */
 }
 
+/* Línea izquierda */
+.contenedor-titulo-blog::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    bottom: 100px;
+    left: 0;
+    width: 2px; /* Ancho de la línea */
+    background-color: black;
+    margin-left: 400px;
+    rotate: 90deg;
+}
 
-.titulo-blog h1{
-    font-size: 4.5rem; /* Tamaño grande para el título */
-    font-weight: normal; /* Puedes ajustar el peso de la fuente según tus preferencias */
+/* Línea derecha */
+.contenedor-titulo-blog::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    bottom: 100px;
+    right: 0;
+    width: 2px; /* Ancho de la línea */
+    background-color: black;
+    margin-right: 400px;
+    rotate: 90deg;
+}
+
+.titulo-blog h1 {
+    font-size: 4.5rem;
+    font-weight: normal;
 }
 
 .locales {
-    font-weight: bold; /* Hace que el texto sea más grueso (negrita) */
+    font-weight: bold;
 }
 
 .guias {
-    font-weight:500; /* Hace que "Hola! Somos" tenga letras más finas */
+    font-weight: 500;
 }
 
 .subtitulo-blog h4 {
-    font-weight:bold;
-    font-size: 1.5rem; /* Tamaño grande para el subtítulo */
-    margin-top: 5px; /* Margen superior para separar el subtítulo del título */
-
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 5px;
 }
 /* ------------------- CONTENIDO 1 ------------------- */
 .contenido1 {
    display: flex;
    margin-top: 20px;
-   margin-left: 100px;
-   margin-right: 100px;
+   padding: 40px;
+   border-radius: 15px;
 }
 
 .contenido1 ul {
@@ -47,7 +72,7 @@
 }
 
 .contenido1 ul h2{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 5px;
     margin-top: -20px;
 }
@@ -79,25 +104,61 @@
 
 .imgblog img {
     height: 230%;
+    border-radius: 15px;
 }
 
 /* ------------------- CONTENIDO 2 ------------------- */
 
 .contenedorBlog1 {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.contenido-texto2 p{
+    font-weight: 500;
+
+   
+}
+
+.contenido3 {
+    background:  #ececec;   /* Agrega un degradado de color de arriba hacia abajo */
+    padding: 20px;
     display: flex;
 }
 
-.contenido2 {
-    margin: 3px;
+.imgblog3 img {
+    width: 690px;
+    height: 650px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
 }
 
-.imgblog1 img {
-    width: 550px;
-    height: 450px;
+.contenido4 {
+    padding: 20px;
+    display: flex;
+}
+
+.imgblog4 img {
+    width: 690px;
+    height: 650px;
     margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.contenido5 {
+    background:  #ececec;
+    padding: 20px;
+    display: flex;
+
+}
+
+.imgblog5 img {
+    width: 690px;
+    height: 650px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
 }
 
 
