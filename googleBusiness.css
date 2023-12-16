@@ -30,7 +30,6 @@
     background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
     border-radius: 15px;
     position: sticky; /* Tarjeta 1 se queda fija */
-
 }
 
 .img-cp{    
@@ -52,7 +51,8 @@
 .img-c {
     width: 50%;
     height: auto;
-    margin-left: 100px;
+    margin-left: 200px;
+    margin-top: 0px;
 }
 
 .seccion-uo-em {
@@ -63,6 +63,12 @@
     background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
     border-radius: 15px;
     position: sticky; /* Tarjeta 1 se queda fija */
+}
+
+.img-uo {
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
 }
 
 .seccion-op {
@@ -82,7 +88,6 @@
 }
 
 .img-op img {
-    height: 500px;
     margin-left: 150px;
 }
 
