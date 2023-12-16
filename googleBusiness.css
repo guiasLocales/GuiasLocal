@@ -4,203 +4,111 @@
 
 .contenedor-gb {
     width: 100%;
-    padding: 10px;
-    background: linear-gradient(to top, #f1f1f1, #FFFFFF);
-    /* Agrega un degradado de color de arriba hacia abajo */
 }
 
-.contenedor-gb h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 120px;
+.titulogb{
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-/* Estilos para las secciones */
-.seccion-cp-pd,
-.seccion-c-gr,
-.seccion-uo-em,
-.seccion-op {
+.titulogb h1{
+    font-size: 4rem; /* Tamaño grande para el título */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+}
+
+.tarjetasGb {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion-cp-pd {
+    display: flex;
     width: 100%;
-    padding: 100px;
-    overflow: hidden;
+    justify-content: center;
+    padding: 40px;
     background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 30px;
     border-radius: 15px;
     position: sticky; /* Tarjeta 1 se queda fija */
-    top: 0;
+
 }
 
-/* Estilos para las imágenes */
-.seccion-cp-pd img {
-    max-width: 100%;
+.img-cp{    
+    width: 50%;
     height: auto;
     margin-left: 100px;
 }
-.seccion-c-gr img {
-    max-width: 100%;
-    height: auto;
-}
-.seccion-uo-em img {
-    max-width: 100%;
-    height: auto;
+
+.seccion-c-gr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    border-radius: 15px;
+    position: sticky; /* Tarjeta 1 se queda fija */
 }
 
-.seccion-op img {
-    float: right;
-    width: 43%;
-    margin-right: 30px;
+.img-c {
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
+
 }
 
-/* Estilos para el texto */
-.seccion-cp-pd h3,
-.seccion-c-gr h3,
-.seccion-uo-em h3,
-.seccion-op h3 {
+.seccion-uo-em {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    border-radius: 15px;
+    position: sticky; /* Tarjeta 1 se queda fija */
+}
+
+.seccion-op {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #f0f0f0, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
+    border-radius: 15px;
+    position: sticky; /* Tarjeta 1 se queda fija */
+}
+
+.img-op {
+    width: 50%;
+    height: auto;
+    margin-right: 100px;
+}
+
+.img-op img {
+    height: 500px;
+    margin-left: 150px;
+}
+
+.texto-d {
+    width: 50%;
+    padding: 10px;
+}
+
+.texto-d h3 {
     color: #333;
-    margin-top: 50px;
     font-weight: bold;
-    font-size: 2.8rem;
-    padding-left: 10px;
+    font-size: 1.8rem;
 }
 
-.seccion-cp-pd p,
-.seccion-c-gr p,
-.seccion-uo-em p,
-.seccion-op p {
-    color: #666;
-    line-height: 1.6;
+.texto-d p {
+    color: #333;
     font-size: 1.2rem;
-    padding-left: 10px;
+    margin-top: -15px;
+    font-weight: bold;
 }
 
-.seccion-cp-pd li,
-.seccion-c-gr li,
-.seccion-uo-em li,
-.seccion-op li {
-    color: #666;
-    line-height: 1.6;
+.texto-d li {
+    color: #333;
+    font-size: 1.2rem;
     list-style: none;
-    padding-left: 10px;
-    font-size: 1.2rem;
-}
-
-/* Estilos para el diseño de dos columnas */
-.texto-derecha {
-    float: right;
-    width: 50%;
-}
-
-.texto-izquierda {
-    float: left;
-    width: 50%;
-}
-
-@media screen and (max-width: 462px) {
-    .contenedor-gb {
-        padding: 0;
-        max-width: 100%;
-        margin-top: -230px;
-    }
-
-    .contenedor-gb h1 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .seccion-cp-pd,
-    .seccion-c-gr,
-    .seccion-uo-em,
-    .seccion-op {
-        max-width: 100%;
-        display: flex;
-        height: 300px;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .seccion-cp-pd .texto-derecha {
-        width: 100%;
-    }
-
-    .seccion-c-gr .texto-izquierda {
-        width: 100%;
-    }
-
-    .seccion-uo-em .texto-derecha {
-        width: 100%;
-    }
-
-    .seccion-op .texto-izquierda {
-        width: 100%;
-    }
-
-
-    .seccion-cp-pd .texto-derecha h3 {
-        width: 50%;
-        font-size: .8rem;
-    }
-
-    .seccion-cp-pd .texto-derecha p {
-        width: 100%;
-        font-size: .6rem;
-        text-align: left;
-    }
-
-    .seccion-c-gr .texto-izquierda h3 {
-        width: 100%;
-        font-size: .8rem;
-    }
-
-    .seccion-c-gr .texto-izquierda p {
-        width: 100%;
-        font-size: .6rem;
-        text-align: left;
-    }
-
-    .seccion-uo-em .texto-derecha h3 {
-        width: 100%;
-        font-size: .8rem;
-    }
-
-    .seccion-uo-em .texto-derecha p {
-        width: 100%;
-        font-size: .6rem;
-        text-align: left;
-    }
-
-    .seccion-op .texto-izquierda h3 {
-        width: 100%;
-        font-size: .8rem;
-    }
-
-    .seccion-op .texto-izquierda p {
-        width: 100%;
-        font-size: .6rem;
-        text-align: left;
-    }
-
-    /* Estilos para las imágenes */
-    .seccion-cp-pd img {
-        max-width: 50%;
-        padding: 0;
-        float: left;
-    }
-    .seccion-c-gr img {
-        max-width: 50%;
-        height: auto;
-    }
-    .seccion-uo-em img {
-        max-width: 50%;
-        height: auto;
-    }
-
-    .seccion-op img {
-        float: right;
-        width: 43%;
-    }
-
+    margin-left: -40px;
+    font-weight: bold;
 }
