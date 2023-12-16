@@ -39,11 +39,6 @@
     margin-left: 100px;
 }
 
-.img-cp img{
-    height: 500px;
-    margin-left: 150px;
-}
-
 .seccion-c-gr {
     display: flex;
     width: 100%;
@@ -100,13 +95,13 @@
 .texto-d h3 {
     color: #333;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
 .texto-d p {
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: -15px;
     font-weight: bold;
     margin-bottom: -5px;
