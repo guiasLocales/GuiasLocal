@@ -122,13 +122,17 @@
 
 @media (max-width: 768px) {
     /* Estilos para dispositivos con ancho máximo de 768px (tamaño de tabletas y móviles) */
+    .contenedor-gb {
+        width: 100%;
+        margin-top: -250px;
+    }
     .img-cp,
     .img-c,
-    .img-uo,
-    .img-op {
+    .img-uo {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        padding: 0%;
     }
 
     .texto-d {
@@ -136,5 +140,29 @@
         padding: 10px;
         text-align: center;
     }
+    .seccion-cp-pd,
+    .seccion-c-gr,
+    .seccion-uo-em {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .seccion-op {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .img-op {
+        width: 100%;
+        padding: 0%;
+        margin: 0 0 0 -60px;
+        margin-top: 15px;
+    }
+
+    .img-op img {
+        width: auto;
+        height: 200px;
+    }
+    
 }
 

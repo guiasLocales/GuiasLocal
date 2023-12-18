@@ -345,7 +345,7 @@ function cargarContenido(targetId) {
 
         <!-- Sección 3: UBICACION OPTIMIZADA - ESTADISTICAS MENSUALES  -->
         <div class="seccion-uo-em">
-            <div class="img-c">
+            <div class="img-uo">
                 <img src="/img/gmb/5 y 6.png" alt="Imagen 3">
             </div>
             <div class="texto-d">
@@ -385,7 +385,7 @@ function cargarContenido(targetId) {
                 </ul>
                 </p>
             </div>
-            <div class="img-c">
+            <div class="img-op">
                 <img src="/img/gmb/opcional.png" alt="Imagen 3">
             </div>
         </div>
