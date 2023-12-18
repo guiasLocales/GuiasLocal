@@ -44,4 +44,19 @@
     .panelDinamico iframe {
         margin-left: 0px;
     }
+
+    .contenedor-ad {
+        margin-top: -250px;
+    }
+
+    .titulo-n h2{
+        font-size: 3rem; /* Tamaño grande para el título */
+        font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    }
+
+    .subtitulo-datos h4{
+        font-size: 1.2rem; /* Tamaño grande para el subtítulo */
+        margin-top: 15px; /* Margen superior para separar el subtítulo del título */
+        margin-bottom: 100px;
+    }
 }

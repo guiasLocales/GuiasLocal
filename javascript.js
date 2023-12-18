@@ -467,7 +467,8 @@ function cargarContenido(targetId) {
 
   if (targetId === "ad") {
     holaInfo.innerHTML = `
-      <i class="fas fa-arrow-left" id='volver'></i>
+    <div class="contenedor-ad">
+    <i class="fas fa-arrow-left" id='volver'></i>
       <div class="contenedor-titulo-datos">
         <div class="titulo-n">
             <h2><span class="fino">Analisis de datos </span></h2>
@@ -480,6 +481,7 @@ function cargarContenido(targetId) {
 
         <iframe width="95%" height="1000" src="https://lookerstudio.google.com/embed/reporting/20166079-1de5-4b2e-9e18-9ac7d47d914a/page/HYHRD" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+    </div>
     </div>
     `;
 
