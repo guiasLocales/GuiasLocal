@@ -399,10 +399,10 @@ function cargarContenido(targetId) {
   if (targetId === "ga") {
     holaInfo.innerHTML = `
     <i class="fas fa-arrow-left" id='volver'></i>
-    <div class="contenedor-gb">
+    <div class="contenedor-ga">
       <h1><span class="bold">Google Ads</span></h1>
         <!-- Sección 1: PLANIFICACION  -->
-        <div class="seccion-cp-pd">
+        <div class="seccion-p">
             <img src="/img/google ads/planificacion.png" alt="Guias locales web">
             <div class="texto-derecha">
                 <h3>PLANIFICACIÓN</h3>
@@ -412,7 +412,7 @@ function cargarContenido(targetId) {
         </div>
     
         <!-- Sección 2: SEGMENTACION Y PALABRA CLAVE -->
-        <div class="seccion-c-gr">
+        <div class="seccion-sp">
             <div class="texto-izquierda">
                 <h3>SEGMENTACIÓN Y PALABRAS CLAVE</h3>
                 <p>Esto incluye seleccionar ubicaciones geograficas especificas, idiomas, dispositivos y palabras clave relevantes. Determina que palabras clave son mas valiosas para tu negocio y asigna una parte del presupuesto para pujar por ellas.
@@ -422,7 +422,7 @@ function cargarContenido(targetId) {
         </div>
     
         <!-- Sección 3: MEDICION Y SEGUIMIENTO  -->
-        <div class="seccion-uo-em">
+        <div class="seccion-ms">
             <img src="/img/google ads/medicion.png" alt="Guias locales web">
             <div class="texto-derecha">
                 <h3>MEDICION Y SEGUIMIENTO</h3>
@@ -431,7 +431,7 @@ function cargarContenido(targetId) {
         </div>
         
         <!-- Sección 4: OPTIMIZACION  -->
-        <div class="seccion-op">
+        <div class="seccion-oc">
             <div class="texto-izquierda">
                 <h3>OPTIMIZACIÓN CONTINUA</h3>
                 <p>Esto puede implicar realizar pruebas A/B, ajustar pujas, mejorar los anuncios o realizar cambios en la segmentacion. Se va ajustando el presupuesto para realizar estas optimizaciones y mejorar el rendimineto de tus anuncios.</p>

@@ -2,13 +2,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.contenedor-gb {
+.contenedor-ga {
     width: 100%;
     padding: 10px;
     background: linear-gradient(to top, #f1f1f1, #FFFFFF);   /* Agrega un degradado de color de arriba hacia abajo */
 }
 
-.contenedor-gb h1 {
+.contenedor-ga h1 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 120px;
@@ -16,10 +16,11 @@
 }
 
 /* Estilos para las secciones */
-.seccion-cp-pd,
-.seccion-c-gr,
-.seccion-uo-em,
-.seccion-op {
+.seccion-p,
+.seccion-sp,
+.seccion-ms,
+.seccion-oc {
+    display: flex;
     width: 100%;
     padding: 100px;
     overflow: hidden;
@@ -191,4 +192,25 @@
 .blue { background-color: #0000FF; }
 
 
+@media (max-width: 768px) {
+    .contenedor-gb {
+        padding: 2%;
+    }
+    
+    .seccion-cp-pd,
+    .seccion-c-gr,
+    .seccion-uo-em,
+    .seccion-op {
+        padding: 5%;
+    }
+    
+    .seccion-cp-pd img,
+    .seccion-c-gr img,
+    .seccion-uo-em img {
+        max-width: 100%;
+        height: 200px;
+        margin-left: 0;
+    }
+    
+}
 
