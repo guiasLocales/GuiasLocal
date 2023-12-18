@@ -1211,4 +1211,14 @@ footer{
     #formulario input[type="submit"] {
         width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
     }
+
+    .footer-consulta {
+        padding: 10px;
+    }
+    .campo input {
+        padding: 3px;
+    }
+    .campo label {
+        margin-bottom:  3px;
+    }
   }
