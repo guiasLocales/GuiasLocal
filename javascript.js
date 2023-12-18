@@ -503,6 +503,7 @@ function cargarContenido(targetId) {
                 <div class="imgblog">
                     <img src="/img/Blog/img1.jpg" alt="Descripción de la imagen" class="imagen">
                 </div>
+                <div class="contenido-texto2">
                 <ul>
                     <h2>Tener tu negocio en Google Maps es importante por varias razones. </h5>
                         <li><strong>Ofrece beneficios tanto
@@ -545,10 +546,10 @@ function cargarContenido(targetId) {
                             clientes
                             locales de manera efectiva.</li>
                 </ul>
+                </div>
             </div>
             <div class="contenedorBlog1">
                 <div class="contenido3">
-
                     <div class="contenido-texto2">
                         <h2 class="titulo-contenido2">Mapas, Reseñas y Más: La Fórmula del Éxito Comercial en Línea</h2>
                        

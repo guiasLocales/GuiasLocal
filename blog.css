@@ -114,6 +114,13 @@
     margin-bottom: 100px;
 }
 
+.contenido-texto2 {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
 .contenido-texto2 p{
     font-weight: 500;
     font-size: 1.1rem;
@@ -178,9 +185,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-.blog {
-    margin-top: -250px;
-}
+    .blog {
+        margin-top: -250px;
+    }
 
     .contenido1 {
         display: block;
@@ -240,6 +247,11 @@
         height: 100%;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+
+    .contenido-texto2 {
+        text-align: center;
+        padding: 30px;
     }
 }
 
