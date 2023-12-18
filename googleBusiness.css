@@ -133,6 +133,8 @@
         margin-left: 0;
         margin-right: 0;
         padding: 0%;
+        margin-bottom: 30px;
+        margin-top: 15px;
     }
 
     .texto-d {
@@ -140,6 +142,25 @@
         padding: 10px;
         text-align: center;
     }
+    
+    .texto-d h3 {
+        color: #333;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .texto-d p {
+        color: #333;
+        font-size: 1rem;
+        margin-top: -15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
     .seccion-cp-pd,
     .seccion-c-gr,
     .seccion-uo-em {
@@ -155,11 +176,18 @@
     .img-op {
         width: 100%;
         padding: 0%;
-        margin: 0 0 0 -60px;
-        margin-top: 15px;
+        margin: 0 0 0 -100px;
+        margin-top: 20px;
     }
 
     .img-op img {
+        width: auto;
+        height: 200px;
+    }
+
+    .img-cp img,
+    .img-c img,
+    .img-uo img {
         width: auto;
         height: 200px;
     }
