@@ -232,10 +232,22 @@
     .texto-izquierda-ga {
         margin-bottom: 30px;
     }
+
+    .texto-derecha-ga h3,
+    .texto-izquierda-ga h3 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
     
     .texto-derecha,
     .texto-izquierda {
         text-align: center;
+    }
+
+    .texto-derecha-ga p,
+    .texto-izquierda-ga p {
+        font-size: 1rem;
+        padding: 10px;
     }
 
     .texto-derecha p,
