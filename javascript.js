@@ -488,8 +488,8 @@ function cargarContenido(targetId) {
 
   if (targetId === "blog") {
     holaInfo.innerHTML = `
-    <i class="fas fa-arrow-left" id='volver'></i>
     <div class="blog">
+    <i class="fas fa-arrow-left" id='volver'></i>
         <div class="contenedor-titulo-blog">
             <div class="titulo-blog">
                 <h1><span class="guias">Guías </span><span class="locales">Locales</span></h1>
