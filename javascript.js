@@ -404,7 +404,7 @@ function cargarContenido(targetId) {
         <!-- Sección 1: PLANIFICACION  -->
         <div class="seccion-p">
             <img src="/img/google ads/planificacion.png" alt="Guias locales web">
-            <div class="texto-derecha">
+            <div class="texto-derecha-ga">
                 <h3>PLANIFICACIÓN</h3>
                 <p>Esto Incluye el estudio del mercado y el analisis de la competencia, en base a esto se diseña la estrategia y el armado de las campañas.
                 </p>
@@ -413,7 +413,7 @@ function cargarContenido(targetId) {
     
         <!-- Sección 2: SEGMENTACION Y PALABRA CLAVE -->
         <div class="seccion-sp">
-            <div class="texto-izquierda">
+            <div class="texto-izquierda-ga">
                 <h3>SEGMENTACIÓN Y PALABRAS CLAVE</h3>
                 <p>Esto incluye seleccionar ubicaciones geograficas especificas, idiomas, dispositivos y palabras clave relevantes. Determina que palabras clave son mas valiosas para tu negocio y asigna una parte del presupuesto para pujar por ellas.
                 </p>
@@ -424,7 +424,7 @@ function cargarContenido(targetId) {
         <!-- Sección 3: MEDICION Y SEGUIMIENTO  -->
         <div class="seccion-ms">
             <img src="/img/google ads/medicion.png" alt="Guias locales web">
-            <div class="texto-derecha">
+            <div class="texto-derecha-ga">
                 <h3>MEDICION Y SEGUIMIENTO</h3>
                 <p>Esto te permitira medir el rendimiento de tus anuncios y realizar ajustes segun los datos obtenidos.</p>
             </div>
@@ -432,7 +432,7 @@ function cargarContenido(targetId) {
         
         <!-- Sección 4: OPTIMIZACION  -->
         <div class="seccion-oc">
-            <div class="texto-izquierda">
+            <div class="texto-izquierda-ga">
                 <h3>OPTIMIZACIÓN CONTINUA</h3>
                 <p>Esto puede implicar realizar pruebas A/B, ajustar pujas, mejorar los anuncios o realizar cambios en la segmentacion. Se va ajustando el presupuesto para realizar estas optimizaciones y mejorar el rendimineto de tus anuncios.</p>
             </div>
