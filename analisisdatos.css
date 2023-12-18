@@ -39,3 +39,9 @@
 .panelDinamico iframe {
     margin-left: 50px;
 }
+
+@media (max-width: 768px) {
+    .panelDinamico iframe {
+        margin-left: 0px;
+    }
+}
