@@ -34,32 +34,32 @@
 }
 
 /* Estilos para las imágenes */
-.seccion-cp-pd img {
+.seccion-p img {
     max-width: 50%;
     height: auto;
     margin-left: 100px;
 }
-.seccion-c-gr img {
+.seccion-sp img {
     max-width: 50%;
     height: auto;
     margin-left: 100px;
 }
-.seccion-uo-em img {
+.seccion-ms img {
     max-width: 50%;
     height: auto;
 }
 
-.seccion-op img {
+.seccion-oc img {
     float: right;
     width: 43%;
     margin-right: 30px;
 }
 
 /* Estilos para el texto */
-.seccion-cp-pd h3,
-.seccion-c-gr h3,
-.seccion-uo-em h3,
-.seccion-op h3 {
+.seccion-p h3,
+.seccion-sp h3,
+.seccion-ms h3,
+.seccion-oc h3 {
     color: #333;
     margin-top: 50px;
     font-weight: bold;
@@ -67,10 +67,10 @@
     padding-left: 10px;
 }
 
-.seccion-cp-pd p,
-.seccion-c-gr p,
-.seccion-uo-em p,
-.seccion-op p {
+.seccion-p p,
+.seccion-sp p,
+.seccion-ms p,
+.seccion-oc p {
     color: #666;
     line-height: 1.6;
     font-size: 1.2rem;
@@ -78,10 +78,10 @@
     font-weight: bold;
 }
 
-.seccion-cp-pd li,
-.seccion-c-gr li,
-.seccion-uo-em li,
-.seccion-op li {
+.seccion-p li,
+.seccion-sp li,
+.seccion-ms li,
+.seccion-oc li {
     color: #666;
     line-height: 1.6;
     list-style: none;
@@ -193,24 +193,143 @@
 
 
 @media (max-width: 768px) {
-    .contenedor-gb {
-        padding: 2%;
+    .contenedor-ga {
+        margin-top: -250px;
+    }
+
+    .contenedor-ga h1 {
+        font-size: 3rem;
     }
     
-    .seccion-cp-pd,
-    .seccion-c-gr,
-    .seccion-uo-em,
-    .seccion-op {
-        padding: 5%;
+    .seccion-p,
+    .seccion-sp,
+    .seccion-ms,
+    .seccion-oc {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
     }
     
-    .seccion-cp-pd img,
-    .seccion-c-gr img,
-    .seccion-uo-em img {
+    .seccion-p img,
+    .seccion-sp img,
+    .seccion-ms img,
+    .seccion-oc img {
         max-width: 100%;
-        height: 200px;
+        height: auto;
         margin-left: 0;
     }
+
+    .seccion-oc img {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .texto-derecha,
+    .texto-izquierda {
+        text-align: center;
+    }
+
+    .texto-derecha p,
+    .texto-izquierda p {
+        width: 100%;
+        margin: 0 0 0 100px;
+        padding: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .texto-derecha h3,
+    .texto-izquierda h3 {
+        width: 100%;
+        font-size: 2rem;
+        margin: 0 -45px 0 100px;
+        padding: 0%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .imgads {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    #left-column h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #left-column {
+        background-color: #0074e5; /* Celeste azulado */
+        width: 100%;
+        height: 400px;
+        transform: rotate(270deg);
+    }
+    
+    #content-objetivos {
+        text-align: center;
+    }
+    
+    #content-objetivos p {
+        margin-top: 10px;
+        font-size: .9rem;
+        margin-left: 0;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    #content-objetivos ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    #content-objetivos li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .color-circle {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    #upper-right-title {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    #duck-mouth,
+    #google-text,
+    #ads-text {
+        display: inline-block;
+    }
+    
+    #duck-mouth {
+        width: 15px;
+        height: 10px;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+        border-top: 5px solid #808080;
+        margin-right: 5px;
+    }
+    
+    #google-text,
+    #ads-text {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #808080;
+    }
+    
     
 }
 

@@ -398,8 +398,8 @@ function cargarContenido(targetId) {
 
   if (targetId === "ga") {
     holaInfo.innerHTML = `
-    <i class="fas fa-arrow-left" id='volver'></i>
     <div class="contenedor-ga">
+    <i class="fas fa-arrow-left" id='volver'></i>
       <h1><span class="bold">Google Ads</span></h1>
         <!-- Sección 1: PLANIFICACION  -->
         <div class="seccion-p">
