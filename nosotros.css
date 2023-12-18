@@ -276,7 +276,7 @@
 
     .texto-derecha,
     .texto-izquierda {
-        padding: 0;
+        margin-right: 200px;
     }
     .texto-derecha h3,
     .texto-izquierda h3 {
@@ -285,7 +285,7 @@
     }
     .texto-derecha p,
     .texto-izquierda p {
-        font-size: .8rem;
+        font-size: .9rem;
         text-align: center;
         max-width: 100%;
     }
